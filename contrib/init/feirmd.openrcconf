@@ -1,0 +1,26 @@
+# /etc/conf.d/feirmd: config file for /etc/init.d/feirmd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/feirm/feirm.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/feirmd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/feirmd.pid"
+
+# Where to write feirmd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/feirmd"
+
+# User and group to own feirmd process
+#BITCOIND_USER="feirm"
+#BITCOIND_GROUP="feirm"
+
+# Path to feirmd executable
+#BITCOIND_BIN="/usr/bin/feirmd"
+
+# Nice value to run feirmd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

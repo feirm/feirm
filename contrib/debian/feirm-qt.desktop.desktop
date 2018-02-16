@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Feirm
+Comment=Feirm P2P Cryptocurrency
+Exec=feirm-qt %u
+Terminal=false
+Type=Application
+Icon=feirm128
+MimeType=x-scheme-handler/feirm;
+Categories=Office;Finance;
+Name[en_US]=feirm-qt.desktop

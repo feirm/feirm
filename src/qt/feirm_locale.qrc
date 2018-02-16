@@ -1,0 +1,29 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/feirm_bg.qm</file>
+        <file alias="ca">locale/feirm_ca.qm</file>
+        <file alias="cs">locale/feirm_cs.qm</file>
+        <file alias="da">locale/feirm_da.qm</file>
+        <file alias="de">locale/feirm_de.qm</file>
+        <file alias="en">locale/feirm_en.qm</file>
+        <file alias="en_US">locale/feirm_en_US.qm</file>
+        <file alias="es">locale/feirm_es.qm</file>
+        <file alias="fi">locale/feirm_fi.qm</file>
+        <file alias="fr_FR">locale/feirm_fr_FR.qm</file>
+        <file alias="it">locale/feirm_it.qm</file>
+        <file alias="ja">locale/feirm_ja.qm</file>
+        <file alias="ko_KR">locale/feirm_ko_KR.qm</file>
+        <file alias="nl">locale/feirm_nl.qm</file>
+        <file alias="pl">locale/feirm_pl.qm</file>
+        <file alias="pt">locale/feirm_pt.qm</file>
+        <file alias="pt_BR">locale/feirm_pt_BR.qm</file>
+        <file alias="ro_RO">locale/feirm_ro_RO.qm</file>
+        <file alias="ru">locale/feirm_ru.qm</file>
+        <file alias="sk">locale/feirm_sk.qm</file>
+        <file alias="sv">locale/feirm_sv.qm</file>
+        <file alias="tr">locale/feirm_tr.qm</file>
+        <file alias="uk">locale/feirm_uk.qm</file>
+        <file alias="zh_CN">locale/feirm_zh_CN.qm</file>
+        <file alias="zh_TW">locale/feirm_zh_TW.qm</file>
+    </qresource>
+</RCC>
