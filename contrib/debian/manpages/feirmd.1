@@ -84,14 +84,14 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'bitgaddress'\fR
+\fBgetaccount 'FRMaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'bitgaddress' ['account']\fR
+\fBsetaccount 'FRMaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
-Returns a new bitg address for 'account'.
+Returns a new feirm address for 'account'.
 .TP
 \fBgetaddressesbyaccount 'account'\fR
 Returns the list of addresses associated with the given 'account'.
@@ -124,13 +124,13 @@ Returns a recent hashes per second performance measurement while generating.
 Returns an object containing server information.
 .TP
 \fBgetnewaddress 'account'\fR
-Returns a new bitg address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
+Returns a new feirm address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
 .TP
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'bitgaddress' ['minconf=1']\fR
-Returns the total amount received by 'bitgaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'FRMaddress' ['minconf=1']\fR
+Returns the total amount received by 'FRMaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -148,7 +148,7 @@ List commands, or get help for a command.
 .TP
 \fBlistaccounts ['minconf=1']\fR
 List accounts and their current balances.
-     *note: requires bitg 1.0.0.1 or later.
+     *note: requires feirm 1.0.0.1 or later.
 .TP
 \fBlistreceivedbyaccount ['minconf=1'] ['includeempty=false']\fR
 ['minconf'] is the minimum number of confirmations before payments are included. ['includeempty'] whether to include addresses that haven't received any payments. Returns an array of objects containing:
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'bitgaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'bitgaddress'. This method will fail if there is less than amount FRM with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'FRMaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'FRMaddress'. This method will fail if there is less than amount FRM with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'bitgaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'bitgaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'FRMaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'FRMaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the Feirm server.
 .TP
-\fBvalidateaddress 'bitgaddress'\fR
-Checks that 'bitgaddress' looks like a proper bitg address. Returns an object containing:
+\fBvalidateaddress 'FRMaddress'\fR
+Checks that 'FRMaddress' looks like a proper feirm address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : bitgaddress.
+    "address" : FRMaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

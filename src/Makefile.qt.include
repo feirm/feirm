@@ -234,12 +234,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_bitg.png \
-  qt/res/icons/unit_mbitg.png \
-  qt/res/icons/unit_ubitg.png \
-  qt/res/icons/unit_tbitg.png \
-  qt/res/icons/unit_tmbitg.png \
-  qt/res/icons/unit_tubitg.png
+  qt/res/icons/unit_frm.png \
+  qt/res/icons/unit_mfrm.png \
+  qt/res/icons/unit_ufrm.png \
+  qt/res/icons/unit_tfrm.png \
+  qt/res/icons/unit_tmfrm.png \
+  qt/res/icons/unit_tufrm.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
