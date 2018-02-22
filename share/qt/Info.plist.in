@@ -32,7 +32,7 @@
   <string>Feirm-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>io.savebitcoin.Feirm-Qt</string>
+  <string>com.feirm.Feirm-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -40,7 +40,7 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>io.savebitcoin.FeirmPayment</string>
+      <string>com.feirm.FeirmPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
         <string>feirm</string>
@@ -52,7 +52,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>io.savebitcoin.paymentrequest</string>
+      <string>com.feirm.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Feirm payment request</string>
       <key>UTTypeConformsTo</key>
@@ -78,7 +78,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>io.savebitcoin.paymentrequest</string>
+        <string>com.feirm.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

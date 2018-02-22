@@ -3,7 +3,7 @@ Feirm Core
 
 Setup
 ---------------------
-[Feirm Core](http://savebitcoin.io) is the original Feirm client and it builds the backbone of the network. However, it downloads and stores the entire history of Feirm transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[Feirm Core](https://www.feirm.com) is the original Feirm client and it builds the backbone of the network. However, it downloads and stores the entire history of Feirm transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -26,7 +26,7 @@ Drag Feirm-Qt to your applications folder, and then run Feirm-Qt.
 
 ### Need Help?
 
-* Join our Discord server [Discord Server](https://discord.savebitcoin.io)
+* Join our Discord server [Discord Server](https://discord.feirm.com)
 
 Building
 ---------------------

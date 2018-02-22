@@ -1,7 +1,7 @@
 <!--- Remove this description and sections that do not apply -->
 
 This issue tracker is only for technical issues related to Feirm Core.
-General Feirm questions and/or support requests and are best directed to the [Feirm Discord](https://discord.savebitcoin.io).
+General Feirm questions and/or support requests and are best directed to the [Feirm Discord](https://discord.feirm.com).
 
 ### Describe the issue
 
