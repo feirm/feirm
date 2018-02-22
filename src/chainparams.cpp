@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79"));
+    (0, uint256("0x000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1518783834, // * UNIX timestamp of last checkpoint block
+    1519319753, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -97,7 +97,7 @@ public:
         pchMessageStart[1] = 0xfb;
         pchMessageStart[2] = 0xa4;
         pchMessageStart[3] = 0x9f;
-        vAlertPubKey = ParseHex("049467a0115f47076e92e8b6c3cd016f7a8bbbdadf603111806df5f9eac5dca4392d3be8971848eb6b96373956ce5ffcb73dff50f8e5bb434aaac786e9a1b0bd85");
+        vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
         nDefaultPort = 4918;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
@@ -120,20 +120,20 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         * python ~/genesis.py -a quark-hash -z "Building a decentralized marketplace" -t 1518783834 -v 0 -p 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+         * python ~/genesis.py -a quark-hash -z "Feirm - A decentralized marketplace" -t 1519319753 -v 0 -p 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
          * 04ffff001d0104244275696c64696e67206120646563656e7472616c697a6564206d61726b6574706c616365
          * algorithm: quark-hash
-         * merkle hash: 73bd91ed29650cf8c5f1a4881172d18d442dde7afc7ab7d098ab9cba64aa1e43
-         * pszTimestamp: Building a decentralized marketplace
+         * merkle hash: 1d6ce0c42565bd2d894338b4098e0add54cd6a8b10d2deadbb48ccf3d4cab430
+         * pszTimestamp: Feirm - A decentralized marketplace
          * pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
-         * time: 1518783834
+         * time: 1519319753
          * bits: 0x1e0ffff0
          * Searching for genesis hash..
          * 16525.0 hash/s, estimate: 72.2 hgenesis hash found!
-         * nonce: 492107
-         * genesis_hash: 0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79
+         * nonce: 21940438
+         * genesis_hash: 000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6
          */
-        const char* pszTimestamp = "Building a decentralized marketplace";
+        const char* pszTimestamp = "Feirm - A decentralized marketplace";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -144,13 +144,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1518783834;
+        genesis.nTime = 1519319753;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 492107;
+        genesis.nNonce = 21940438;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79"));
-        assert(genesis.hashMerkleRoot == uint256("0x73bd91ed29650cf8c5f1a4881172d18d442dde7afc7ab7d098ab9cba64aa1e43"));
+        assert(hashGenesisBlock == uint256("0x000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6"));
+        assert(genesis.hashMerkleRoot == uint256("0x1d6ce0c42565bd2d894338b4098e0add54cd6a8b10d2deadbb48ccf3d4cab430"));
 
         // Feirm addresses start with 'F'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 12);
@@ -221,11 +221,11 @@ public:
         nMaxMoneyOut = 100000000 * COIN;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1518783834;
-        genesis.nNonce = 492107;
+        genesis.nTime = 1519319753;
+        genesis.nNonce = 21940438;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79"));
+        assert(hashGenesisBlock == uint256("0x000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -292,13 +292,13 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Feirm: 1 day
         nTargetSpacing = 2 * 60;        // Feirm: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1518783834;
+        genesis.nTime = 1519319753;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 492107;
+        genesis.nNonce = 21940438;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 81295;
-        assert(hashGenesisBlock == uint256("0x0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79"));
+        assert(hashGenesisBlock == uint256("0x000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Regtest mode doesn't have any DNS seeds.
