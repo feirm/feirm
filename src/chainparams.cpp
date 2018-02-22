@@ -139,17 +139,17 @@ public:
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].nValue = 0 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
+        txNew.vout[0].scriptPubKey = CScript() << ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1519319753;
+        genesis.nTime = 1519321720;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 21940438;
+        genesis.nNonce = 20749934;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000005435e5f5832f358d617d23cb762eeb536c15caff1bf69b8aa16ade869e6"));
+        assert(hashGenesisBlock == uint256("0x00000d2a3b1462b52b6f016a839aac1ffb8c015a161b74299076eb144cb33526"));
         assert(genesis.hashMerkleRoot == uint256("0x1d6ce0c42565bd2d894338b4098e0add54cd6a8b10d2deadbb48ccf3d4cab430"));
 
         // Feirm addresses start with 'F'
