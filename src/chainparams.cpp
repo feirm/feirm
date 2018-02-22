@@ -54,11 +54,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-    (0, uint256("0x000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b"));
+    (0, uint256("0x0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1516926684, // * UNIX timestamp of last checkpoint block
+    1518783834, // * UNIX timestamp of last checkpoint block
     0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2000        // * estimated number of transactions per day after checkpoint
@@ -97,7 +97,7 @@ public:
         pchMessageStart[1] = 0xfb;
         pchMessageStart[2] = 0xa4;
         pchMessageStart[3] = 0x9f;
-        vAlertPubKey = ParseHex("045ad6f1551c2367f81c0ecb4d45d088298442887645a314dfcba3039401872473b0200e69d9679a0d7cc307fb9aaaacafb0cebc18050ce7c995fa19c6accc8415");
+        vAlertPubKey = ParseHex("049467a0115f47076e92e8b6c3cd016f7a8bbbdadf603111806df5f9eac5dca4392d3be8971848eb6b96373956ce5ffcb73dff50f8e5bb434aaac786e9a1b0bd85");
         nDefaultPort = 4918;
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
@@ -120,18 +120,18 @@ public:
          * Build the genesis block. Note that the output of the genesis coinbase cannot
          * be spent as it did not originally exist in the database.
          *
-         * python ~/genesis.py -a quark-hash -z "Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners" -t 1516926684 -v 0 -p 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
-         * 04ffff001d01042642544320426c6f636b20353031353932202d20323031372d31322d32392031353a34333a3337
+         * python ~/genesis.py -a quark-hash -z "Building a decentralized marketplace" -t 1518783834 -v 0 -p 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+         * 04ffff001d0104244275696c64696e67206120646563656e7472616c697a6564206d61726b6574706c616365
          * algorithm: quark-hash
-         * merkle hash: 07cbcacfc822fba6bbeb05312258fa43b96a68fc310af8dfcec604591763f7cf
-         * pszTimestamp: Even With Energy Surplus, Canada Unable to Meet Electricity Demands of Bitcoin Miners
-         * pubkey: 04e5a8143f86ad8ac63791fbbdb8e0b91a8da88c8c693a95f6c2c13c063ea790f7960b8025a9047a7bc671d5cfe707a2dd2e13b86182e1064a0eea7bf863636363
-         * time: 1516926684
+         * merkle hash: 73bd91ed29650cf8c5f1a4881172d18d442dde7afc7ab7d098ab9cba64aa1e43
+         * pszTimestamp: Building a decentralized marketplace
+         * pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+         * time: 1518783834
          * bits: 0x1e0ffff0
          * Searching for genesis hash..
          * 16525.0 hash/s, estimate: 72.2 hgenesis hash found!
-         * nonce: 21256609
-         * genesis_hash: 000008467c3a9c587533dea06ad9380cded3ed32f9742a6c0c1aebc21bf2bc9b
+         * nonce: 492107
+         * genesis_hash: 0000065eb9da8b3d1b411ce544db2006642eb06d8d8db59a3bcf79a76cd0af79
          */
         const char* pszTimestamp = "Building a decentralized marketplace";
         CMutableTransaction txNew;
@@ -164,7 +164,7 @@ public:
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
         // Feirm BIP44 coin type is '222' (0x800000de)
         // BIP44 coin type is from https://github.com/satoshilabs/slips/blob/master/slip-0044.md
-        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xde).convert_to_container<std::vector<unsigned char> >();
+        base58Prefixes[EXT_COIN_TYPE] = boost::assign::list_of(0x80)(0x00)(0x00)(0xc1).convert_to_container<std::vector<unsigned char> >();
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
@@ -178,7 +178,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "04cc17389379a0e323f53ea504d38cd71f43dc22f597805fed33a51b05ced1a3ae0db84089985f351b3737721736a82f58c8bd529f79c8ffe57e922bda792146ab";
+        strSporkKey = "049b166b15dd487a22ec57a232f402f7253b7c26002be9a8dab36bd7ac96b33d249622d15eedef3ca77cf20dd936ad7a00aefb763d216722ae31bcac2f0b840046";
         strMasternodePoolDummyAddress = "GSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis creation
 
@@ -202,10 +202,10 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x4a;
-        pchMessageStart[1] = 0x2d;
-        pchMessageStart[2] = 0x32;
-        pchMessageStart[3] = 0xbc;
+        pchMessageStart[0] = 0x33;
+        pchMessageStart[1] = 0x1a;
+        pchMessageStart[2] = 0xbb;
+        pchMessageStart[3] = 0x5c;
         vAlertPubKey = ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f");
         nDefaultPort = 34912;
         nEnforceBlockUpgradeMajority = 51;
@@ -230,6 +230,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
+        vSeeds.push_back(CDNSSeedData("seed1.feirm.com", "seed1.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("seed2.feirm.com", "seed2.feirm.com"));
+
         // Testnet Feirm addresses start with 'g'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
         // Testnet Feirm script addresses start with '5' or '6'
@@ -253,7 +256,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "04abb5e65280dda6a113fadfb9877f9c399532245fe1acb61de293ab298034d5084277fab3768774a3b68cbbe5021cc5049ec8c9997a13f64da1afa0bcfb156db1";
+        strSporkKey = "0440f83f0d7311f7820bd863d3b24c03ee5fa241b3554b62d3f15b42234c42dbca99147422ae4550d635a3320f84c0cb6a502d7989d645f1917f9c4cd37d180b57";
         strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
