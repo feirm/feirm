@@ -12,6 +12,7 @@
 #include "primitives/block.h"
 #include "uint256.h"
 #include "util.h"
+#include "spork.h"
 
 #include <math.h>
 
@@ -48,7 +49,12 @@ unsigned int GetNextWorkRequired(const CBlockIndex* pindexLast, const CBlockHead
         uint256 bnNew;
         bnNew.SetCompact(pindexLast->nBits);
 
-        int64_t nInterval = (Params().TargetTimespan() * 60) / Params().TargetSpacing();
+        int64_t nInterval;
+        if (pindexLast->nHeight > SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3)
+            nInterval = (Params().TargetTimespan() * 60) / Params().TargetSpacing();
+        else
+            nInterval = Params().TargetTimespan() / Params().TargetSpacing();
+
         bnNew *= ((nInterval - 1) * Params().TargetSpacing() + nActualSpacing + nActualSpacing);
         bnNew /= ((nInterval + 1) * Params().TargetSpacing());
 
