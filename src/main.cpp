@@ -1629,7 +1629,11 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 1 * COIN;
     else if (nHeight > 5000 && nHeight <= 25000)
         nSubsidy = 30 * COIN;
-    else if (nHeight > 25000 && nHeight <= 100000)
+    else if (nHeight > 25000 && nHeight <= 50000)
+        nSubsidy = 20 * COIN;
+    else if (nHeight > 50000 && nHeight <= 75000)
+        nSubsidy = 30 * COIN;
+    else if (nHeight > 75000 && nHeight <= 100000)
         nSubsidy = 20 * COIN;
     else if (nHeight > 100000 && nHeight <= 1050000)
         nSubsidy = 10 * COIN;
@@ -5343,7 +5347,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-
     // SPORK_14 was used for 70910. Leave it 'ON' so they don't see > 70910 nodes. They won't react to SPORK_15
     // messages because it's not in their code
 
@@ -5355,7 +5358,11 @@ int ActiveProtocol()
     // own ModifierUpgradeBlock()
 
     if (IsSporkActive(SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2))
-            return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+
+    if (IsSporkActive(SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3))
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT3;
+
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
