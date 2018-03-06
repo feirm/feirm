@@ -13,7 +13,7 @@ More information at [feirm.com](https://www.feirm.com)
 ### Coin Specs
 | Block Time                  | 60 Seconds      |
 | Max Coin Supply (PoS Phase) | 100,000,000 FRM |
-| Premine                     | 10,000,000 FRM    |
+| Premine                     | 1,000,000 FRM    |
 
 ### Reward Distribution
 
