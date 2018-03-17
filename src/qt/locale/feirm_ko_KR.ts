@@ -62,12 +62,12 @@
         <translation>받는 주소</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>이 주소들은 전송할 FRM 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>이 주소들은 전송할 XFE 주소입니다. 송금하기 전 항상 금액과 전송할 주소를 확인해주세요.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>이 주소들은 전송 받을 FRM 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>이 주소들은 전송 받을 XFE 주소입니다. 각 트랜잭션별로 새로운 입금 주소를 사용하는 것이 좋습니다.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>지갑 암호화 확인</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 FRMs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm는 이제 암호화 프로세스를 마치기 위해 닫힐것입니다. 지갑을 암호화하더라도 맬웨어로 인한 XFEs 의 도난당하는 것을 완벽하게 보호 할 수는 없습니다.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>지갑을 암호화 하시겠습니까?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 FRM를 잃게 됩니다&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>경고: 지갑 암호화 후 암호를 분실하게 되면 &lt;b&gt;모든 XFE를 잃게 됩니다&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 암호화</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38을 사용하여 암호화 할 FRM 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38을 사용하여 암호화 할 XFE 주소를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 암호화를 누르면 암호화된 개인 키가 계산됩니다.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>주소:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 FRM 주소</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>메세지를 서명하기 위한 XFE 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>이 FRM 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>이 XFE 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>BIP 38 암호화 된 개인 키를 입력하십시오. 중간 입력창에 암호를 입력하십시오. 키를 암호해제 후 '주소 가져오기'를 클릭하면 개인 키가 지갑에 추가됩니다.</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>메세지에 서명된 FRM 주소</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>메세지에 서명된 XFE 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>메세지가 지정된 FRM 주소로 서명되었는지 확인해주세요</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>메세지가 지정된 XFE 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,8 +598,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>FRM 주소로 전송하기</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>XFE 주소로 전송하기</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -626,12 +626,12 @@
         <translation>Feirm에 대한 구성 옵션 수정</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>FRM 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>XFE 주소로 메시지에 서명하여 소유하고 있음을 증명하십시오.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>메시지가 지정된 FRM 주소로 서명되었는지 확인합니다.</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>메시지가 지정된 XFE 주소로 서명되었는지 확인합니다.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -979,8 +979,8 @@ Address: %4
         <translation>중간 높음</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>입력당 +/- %1 uFRM을 변경할 수 있습니다.</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>입력당 +/- %1 uXFE을 변경할 수 있습니다.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1094,8 +1094,8 @@ Address: %4
         <translation>보내는 주소 수정</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>입력된 주소 "%1"는 올바른 FRM 주소가 아닙니다.</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>입력된 주소 "%1"는 올바른 XFE 주소가 아닙니다.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1357,12 +1357,12 @@ Address: %4
         <translation>보낼 주소 입력</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>다중전송을 사용하면 성취 한 뒤 다른 FRM 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
-추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 FRM 주소를 입력하십시오.
+        <translation>다중전송을 사용하면 성취 한 뒤 다른 XFE 주소 목록에 최대 100% 스테이크 또는 마스터노드 보상을 자동으로 보낼 수 있습니다.
+추가하려면 : 부여 할 백분율과 다중전송 벡터에 추가 할 XFE 주소를 입력하십시오.
 삭제하려면 삭제할 주소를 입력하고 삭제를 누릅니다.
 활성화를 클릭하지 않으면 다중전송이 활성화되지 않습니다.</translation>
     </message>
@@ -1813,8 +1813,8 @@ Please check the address and try again.</source>
         <translation>feirm을 시작할 수 없습니다: 결제하기 위한 클릭 처리</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</source>
-        <translation>URI를 분석할 수 없습니다! 이는 잘못된 FRM 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</source>
+        <translation>URI를 분석할 수 없습니다! 이는 잘못된 XFE 주소 또는 URI 매개변수 손상으로 인해 발생할 수 있습니다.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1899,8 +1899,8 @@ Please check the address and try again.</source>
         <translation>금액</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>FRM 주소를 입력하세요 (예 %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>XFE 주소를 입력하세요 (예 %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2506,8 +2506,8 @@ Please check the address and try again.</source>
         <translation>UTXO 크기:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2550,12 +2550,12 @@ Please check the address and try again.</source>
         <translation>승인 시간:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uFRMs로 설정되고,&lt;br /&gt;1000 uFRMs 안에는 최소 "킬로바이트당" 250 uFRMs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uXFEs로 설정되고,&lt;br /&gt;1000 uXFEs 안에는 최소 "킬로바이트당" 250 uXFEs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "total at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uFRMs로 설정되고,&lt;br /&gt;1000 uFRMs 안에는 전체에서 최소 "킬로바이트당" 250 uFRMs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "total at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>트랜잭션이 250바이트 인 경우 사용자 지정 수수료가 1000 uXFEs로 설정되고,&lt;br /&gt;1000 uXFEs 안에는 전체에서 최소 "킬로바이트당" 250 uXFEs 만 지불합니다. 1 킬로바이트보다 큰 트랜잭션의 경우 모두 킬로바이트 단위로 지불합니다.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Feirm transactions than the network can process.</source>
@@ -2658,8 +2658,8 @@ Please check the address and try again.</source>
         <translation>사용</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>경고: 잘못된 FRM 주소</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>경고: 잘못된 XFE 주소</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2753,8 +2753,8 @@ Please check the address and try again.</source>
         <translation>지불 &amp;대상:</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>전송할 FRM 주소</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>전송할 XFE 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2843,8 +2843,8 @@ Please check the address and try again.</source>
         <translation>자신의 주소로 메세지에 서명할 수 있습니다. 피싱 공격으로 사용자를 속일 수 있으므로 서명에 주의해주세요. 동의하는 바에 한하여 서명하십시오.</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>메세지를 서명하기 위한 FRM 주소</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>메세지를 서명하기 위한 XFE 주소</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2875,16 +2875,16 @@ Please check the address and try again.</source>
         <translation>현재 서명을 시스템 클립 보드에 복사</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>이 FRM 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>이 XFE 주소를 소유하고 있다는 것을 증명하기 위해 메세지에 서명하십시오</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>메세지에 서명된 FRM 주소</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>메세지에 서명된 XFE 주소</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>메세지가 지정된 FRM 주소로 서명되었는지 확인해주세요</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>메세지가 지정된 XFE 주소로 서명되었는지 확인해주세요</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3479,8 +3479,8 @@ Please check the address and try again.</source>
         <translation>코인 전송 </translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FRM.</source>
-        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 FRM로 제한됩니다.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XFE.</source>
+        <translation>SwiftTX는 아직 높은 값을 전송하는 것을 지원하지 않습니다. 트랜잭션은 현재 %1 XFE로 제한됩니다.</translation>
     </message>
 </context>
 <context>
@@ -3609,12 +3609,12 @@ Please check the address and try again.</source>
         <translation>최고 블록이 변경될 경우 명령을 실행하십시오 (명령 내 %s 는 블록 해시로 대체 되었습니다)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>이것보다 작은 수수료 (FRM/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>이것보다 작은 수수료 (XFE/Kb)는 중계 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>이것보다 작은 수수료 (FRM/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>이것보다 작은 수수료 (XFE/Kb)는 트랜잭션 생성 수수료가 없는 것으로 간주됩니다 (기본값: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3733,8 +3733,8 @@ rpcpassword=%s
         <translation>이 컴퓨터를 %s 로 지정하는것은 불가능합니다. Feirm Core는 이미 실행 중입니다.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FRM.</source>
-        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 FRM와 같지 않음</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XFE.</source>
+        <translation>트랜잭션에 대한 충분한 금액을 찾을 수 없습니다. 10000 XFE와 같지 않음</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4009,8 +4009,8 @@ rpcpassword=%s
         <translation>블록을 받아오는데 실패했습니다.</translation>
     </message>
     <message>
-        <source>Fee (in FRM/kB) to add to transactions you send (default: %s)</source>
-        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (FRM/kB) (기본값: %s)</translation>
+        <source>Fee (in XFE/kB) to add to transactions you send (default: %s)</source>
+        <translation>당신이 보내는 트랜잭션에 추가 할 수수료 (XFE/kB) (기본값: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

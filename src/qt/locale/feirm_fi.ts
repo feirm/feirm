@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun FRM osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun XFE osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun FRM osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun XFE osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella FRMien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella XFEien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki FRMisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki XFEisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,8 +231,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä FRM osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä XFE osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -240,8 +240,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>FRM osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>XFE osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -272,8 +272,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän FRM osoitteen</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän XFE osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -296,12 +296,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>FRM osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>XFE osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla FRM osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla XFE osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,8 +591,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Feirm Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Lähetä kolikkoja FRM osoitteeseen</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Lähetä kolikkoja XFE osoitteeseen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -619,12 +619,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Muokkaa konfiguraatio vaihtoehtoja Feirm:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä FRM osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä XFE osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1752,8 +1752,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1836,8 +1836,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>Varoitus: Virheellinen FRM osoite</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>Varoitus: Virheellinen XFE osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -1875,8 +1875,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>FRM osoite johon maksu lähetetään</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>XFE osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1937,8 +1937,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>FRM osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>XFE osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1969,16 +1969,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän FRM osoitteen</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän XFE osoitteen</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>FRM osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>XFE osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla FRM osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla XFE osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>

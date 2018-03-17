@@ -62,12 +62,12 @@
         <translation>Receiving addresses</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirm wallet encryption</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Are you sure you wish to encrypt your wallet?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Encrypt</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Address:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>The FRM address to sign the message with</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>The XFE address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Sign the message to prove you own this FRM address</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Sign the message to prove you own this XFE address</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Enter the BIP 38 encrypted private key. Enter the passphrase in the middle box. Click Decrypt Key to compute the private key. After the key is decrypted, clicking 'Import Address' will add this private key to the wallet.</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>The FRM address the message was signed with</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>The XFE address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Verify the message to ensure it was signed with the specified FRM address</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Verify the message to ensure it was signed with the specified XFE address</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,8 +602,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Send coins to a FRM address</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Send coins to a XFE address</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -630,12 +630,12 @@
         <translation>Modify configuration options for Feirm</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Sign messages with your FRM addresses to prove you own them</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Sign messages with your XFE addresses to prove you own them</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Verify messages to ensure they were signed with specified FRM addresses</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Verify messages to ensure they were signed with specified XFE addresses</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1003,8 +1003,8 @@ Address: %4
         <translation>medium-high</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>Can vary +/- %1 uFRM per input.</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>Can vary +/- %1 uXFE per input.</translation>
     </message>
     <message>
         <source>n/a</source>
@@ -1122,8 +1122,8 @@ Address: %4
         <translation>Edit sending address</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>The entered address "%1" is not a valid FRM address.</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>The entered address "%1" is not a valid XFE address.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1385,12 +1385,12 @@ Address: %4
         <translation>Enter Address to Send to</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <translation>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</translation>
     </message>
@@ -1857,8 +1857,8 @@ Please check the address and try again.</translation>
         <translation>Cannot start feirm: click-to-pay handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</source>
-        <translation>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</source>
+        <translation>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1943,8 +1943,8 @@ Please check the address and try again.</translation>
         <translation>Amount</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>Enter a FRM address (e.g. %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>Enter a XFE address (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2553,8 +2553,8 @@ Please check the address and try again.</translation>
         <translation>UTXO Size:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2597,12 +2597,12 @@ Please check the address and try again.</translation>
         <translation>Confirmation time:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "total at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "total at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "total at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "total at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Feirm transactions than the network can process.</source>
@@ -2705,8 +2705,8 @@ Please check the address and try again.</translation>
         <translation>using</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>Warning: Invalid FRM address</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>Warning: Invalid XFE address</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2804,8 +2804,8 @@ Please check the address and try again.</translation>
         <translation>Pay &amp;To:</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>The FRM address to send the payment to</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>The XFE address to send the payment to</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2894,8 +2894,8 @@ Please check the address and try again.</translation>
         <translation>You can sign messages with your addresses to prove you own them. Be careful not to sign anything vague, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>The FRM address to sign the message with</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>The XFE address to sign the message with</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2926,16 +2926,16 @@ Please check the address and try again.</translation>
         <translation>Copy the current signature to the system clipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Sign the message to prove you own this FRM address</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Sign the message to prove you own this XFE address</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>The FRM address the message was signed with</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>The XFE address the message was signed with</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Verify the message to ensure it was signed with the specified FRM address</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Verify the message to ensure it was signed with the specified XFE address</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3545,8 +3545,8 @@ Please check the address and try again.</translation>
         <translation>Send Coins</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FRM.</source>
-        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FRM.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XFE.</source>
+        <translation>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XFE.</translation>
     </message>
 </context>
 <context>
@@ -3675,12 +3675,12 @@ Please check the address and try again.</translation>
         <translation>Execute command when the best block changes (%s in cmd is replaced by block hash)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>
@@ -3799,8 +3799,8 @@ for example: alertnotify=echo %%s | mail -s "Feirm Alert" admin@foo.com
         <translation>Unable to bind to %s on this computer. Feirm Core is probably already running.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FRM.</source>
-        <translation>Unable to locate enough funds for this transaction that are not equal 10000 FRM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XFE.</source>
+        <translation>Unable to locate enough funds for this transaction that are not equal 10000 XFE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4075,8 +4075,8 @@ for example: alertnotify=echo %%s | mail -s "Feirm Alert" admin@foo.com
         <translation>Failed to read block</translation>
     </message>
     <message>
-        <source>Fee (in FRM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Fee (in FRM/kB) to add to transactions you send (default: %s)</translation>
+        <source>Fee (in XFE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Fee (in XFE/kB) to add to transactions you send (default: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

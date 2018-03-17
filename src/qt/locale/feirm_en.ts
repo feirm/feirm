@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -216,7 +216,7 @@
     </message>
     <message>
         <location line="+9"/>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -226,7 +226,7 @@
     </message>
     <message>
         <location line="+0"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -302,7 +302,7 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -313,7 +313,7 @@
     </message>
     <message>
         <location line="-355"/>
-        <source>The FRM address to sign the message with</source>
+        <source>The XFE address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -355,7 +355,7 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FRM address</source>
+        <source>Sign the message to prove you own this XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -386,12 +386,12 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>The FRM address the message was signed with</source>
+        <source>The XFE address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+29"/>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -806,7 +806,7 @@
     </message>
     <message>
         <location line="-707"/>
-        <source>Send coins to a FRM address</source>
+        <source>Send coins to a XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -846,12 +846,12 @@
     </message>
     <message>
         <location line="+16"/>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1334,8 +1334,8 @@ Address: %4
     </message>
     <message>
         <location line="+238"/>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>Can vary +/- %1 uFRM per input.</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>Can vary +/- %1 uXFE per input.</translation>
     </message>
     <message>
         <location filename="../forms/coincontroldialog.ui" line="-334"/>
@@ -1481,7 +1481,7 @@ Address: %4
     </message>
     <message>
         <location line="+67"/>
-        <source>The entered address &quot;%1&quot; is not a valid FRM address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid XFE address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1807,8 +1807,8 @@ Address: %4
     </message>
     <message>
         <location line="+16"/>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
         <translation type="unfinished"></translation>
@@ -2063,7 +2063,7 @@ Please be patient after clicking import.</source>
     </message>
     <message>
         <location line="+13"/>
-        <source>Add destinations to send FRM to</source>
+        <source>Add destinations to send XFE to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2473,7 +2473,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+43"/>
-        <source>FRM Balances</source>
+        <source>XFE Balances</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2574,7 +2574,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+36"/>
-        <source>FRM:</source>
+        <source>XFE:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2589,7 +2589,7 @@ p, li { white-space: pre-wrap; }
         <location line="+189"/>
         <location line="+31"/>
         <location line="+44"/>
-        <source>0.000 000 00 FRM</source>
+        <source>0.000 000 00 XFE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2650,7 +2650,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+114"/>
-        <source>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2758,7 +2758,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+113"/>
-        <source>Enter a FRM address (e.g. %1)</source>
+        <source>Enter a XFE address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3584,7 +3584,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+7"/>
-        <source>0 FRM</source>
+        <source>0 XFE</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3654,12 +3654,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+772"/>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uFRMs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uXFEs in fee,&lt;br /&gt;while &quot;at least&quot; pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uFRMs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then &quot;per kilobyte&quot; only pays 250 uXFEs in fee,&lt;br /&gt;while &quot;total at least&quot; pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3786,7 +3786,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+622"/>
-        <source>Warning: Invalid FRM address</source>
+        <source>Warning: Invalid XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3915,7 +3915,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+18"/>
-        <source>The FRM address to send the payment to</source>
+        <source>The XFE address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4032,7 +4032,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+18"/>
-        <source>The FRM address to sign the message with</source>
+        <source>The XFE address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4074,17 +4074,17 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this FRM address</source>
+        <source>Sign the message to prove you own this XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+106"/>
-        <source>The FRM address the message was signed with</source>
+        <source>The XFE address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4882,7 +4882,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location line="-18"/>
         <location line="+9"/>
-        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 FRM.</source>
+        <source>SwiftTX doesn&apos;t support sending values that high yet. Transactions are currently limited to %1 XFE.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5033,12 +5033,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5173,7 +5173,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Feirm Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FRM.</source>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XFE.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5553,7 +5553,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Feirm Alert&quot; admin@foo.co
     </message>
     <message>
         <location line="+1"/>
-        <source>Fee (in FRM/kB) to add to transactions you send (default: %s)</source>
+        <source>Fee (in XFE/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

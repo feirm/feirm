@@ -900,7 +900,7 @@ QWidget .QFrame#frameBalances .QLabel#labelImmatureText, /* Immature Balance Lab
 QWidget .QFrame#frameBalances .QLabel#labelTotalText, /* Total Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelPendingText, /* Pending Balance Label */
 QWidget .QFrame#frameBalances .QLabel#labelBalanceText, /* Available Balance Label */
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* FRM Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* XFE Balances Header Label */
 	qproperty-alignment: 'AlignVCenter | AlignLeft';
 	min-width: 160px;
 	color: #333333;
@@ -909,11 +909,11 @@ QWidget .QFrame#frameBalances .QLabel#labelBalances { /* FRM Balances Header Lab
 	font-size: 14px;
 }
 
-QWidget .QFrame#frameBalances .QLabel#labelBalances { /* FRM Balances Header Label */
+QWidget .QFrame#frameBalances .QLabel#labelBalances { /* XFE Balances Header Label */
 	font-weight: bold;
 }
 
-QWidget .QFrame#frameBalances #lineBalances { /* FRM Balances Line separator */
+QWidget .QFrame#frameBalances #lineBalances { /* XFE Balances Line separator */
 	background-color:#D65C38;
 }
 

@@ -81,10 +81,10 @@ QT_TRANSLATE_NOOP("feirm-core", ""
 "Execute command when the best block changes (%s in cmd is replaced by block "
 "hash)"),
 QT_TRANSLATE_NOOP("feirm-core", ""
-"Fees (in FRM/Kb) smaller than this are considered zero fee for relaying "
+"Fees (in XFE/Kb) smaller than this are considered zero fee for relaying "
 "(default: %s)"),
 QT_TRANSLATE_NOOP("feirm-core", ""
-"Fees (in FRM/Kb) smaller than this are considered zero fee for transaction "
+"Fees (in XFE/Kb) smaller than this are considered zero fee for transaction "
 "creation (default: %s)"),
 QT_TRANSLATE_NOOP("feirm-core", ""
 "Flush database activity from memory pool to disk log every <n> megabytes "
@@ -168,7 +168,7 @@ QT_TRANSLATE_NOOP("feirm-core", ""
 "Unable to bind to %s on this computer. Feirm Core is probably already running."),
 QT_TRANSLATE_NOOP("feirm-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
-"FRM."),
+"XFE."),
 QT_TRANSLATE_NOOP("feirm-core", ""
 "Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: "
 "%s)"),
@@ -276,7 +276,7 @@ QT_TRANSLATE_NOOP("feirm-core", "Failed to listen on any port. Use -listen=0 if 
 QT_TRANSLATE_NOOP("feirm-core", "Failed to read block index"),
 QT_TRANSLATE_NOOP("feirm-core", "Failed to read block"),
 QT_TRANSLATE_NOOP("feirm-core", "Failed to write block index"),
-QT_TRANSLATE_NOOP("feirm-core", "Fee (in FRM/kB) to add to transactions you send (default: %s)"),
+QT_TRANSLATE_NOOP("feirm-core", "Fee (in XFE/kB) to add to transactions you send (default: %s)"),
 QT_TRANSLATE_NOOP("feirm-core", "Finalizing transaction."),
 QT_TRANSLATE_NOOP("feirm-core", "Force safe mode (default: %u)"),
 QT_TRANSLATE_NOOP("feirm-core", "Found enough users, signing ( waiting %s )"),

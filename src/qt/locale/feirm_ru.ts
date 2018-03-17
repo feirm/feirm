@@ -62,12 +62,12 @@
         <translation>Адреса получения</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Это ваши FRM-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Это ваши XFE-адреса для отправки платежей. Перед отправкой монет всегда проверяйте сумму и адрес получателя.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Это ваши FRM-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Это ваши XFE-адреса для получения платежей. Для каждой транзакции рекомендуется использовать новый адрес получения.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Подтверждение шифрования кошелька</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши FRM от кражи с использованием вредоносного ПО.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm сейчас закроется, чтобы завершить процесс шифрования. Помните, что шифрование вашего кошелька не может полностью защитить ваши XFE от кражи с использованием вредоносного ПО.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Вы действительно хотите зашифровать свой кошелек?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ FRM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Внимание: если вы зашифруете свой кошелёк и потеряете от него пароль, то вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ СВОИ XFE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,16 +231,16 @@
         <translation>&amp;BIP 38 Шифрование</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Введите FRM адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Введите XFE адрес, которым вы хотите зашифровать, используя BIP 38. Введите пароль в среднем поле. Нажмите "Зашифровать", чтобы создать зашиврованный секретный ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>Адрес FRM для подписи сообщения с помощью</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>Адрес XFE для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес XFE</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -295,12 +295,12 @@
         <translation>Введите зашифрованный с помощью BIP 38 секретный ключ. Введите секретную фразу в среднем окне. Нажмите Дешифровать Ключ чтобы создать секретный ключ. Нажав на Импортировать Адрес после дешифровки, вы добавите секретный ключ к кошельку.</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>Адрес FRM, которым подписано сообщение</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>Адрес XFE, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным FRM адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным XFE адресом </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -594,8 +594,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Отправить монеты на FRM адрес</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Отправить монеты на XFE адрес</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -622,12 +622,12 @@
         <translation>Изменение параметров конфигурации Feirm</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Подписывайте сообщения вашими FRM адресами, чтобы доказать, что вы их владелец</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Подписывайте сообщения вашими XFE адресами, чтобы доказать, что вы их владелец</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным FRM адресом </translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Проверте сообщения, чтобы убедиться, что они были подписаны указанным XFE адресом </translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -975,8 +975,8 @@ MultiSend: %1</translation>
         <translation>средне-высокий</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>Может вариировать +/- %1 uFRM к вводу</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>Может вариировать +/- %1 uXFE к вводу</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1090,8 +1090,8 @@ MultiSend: %1</translation>
         <translation>Изменить адрес отправки</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>Введенный адрес "%1" не является FRM адресом.</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>Введенный адрес "%1" не является XFE адресом.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1353,12 +1353,12 @@ MultiSend: %1</translation>
         <translation>Введите адрес для отправки</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие FRM адреса.
-Для добавления: введите передаваемый процент и FRM адрес для добавления к вектору MultiSend.
+        <translation>MultiSend позволяет вам автоматически отправлять до 100% вознаграждения за мастерноды и хранение, после их созревания, на другие XFE адреса.
+Для добавления: введите передаваемый процент и XFE адрес для добавления к вектору MultiSend.
 Для удаления: введите удаляемый адрес и нажмите удалить.
 MultiSend будет неактивен до тех пор, пока вы не нажмете Включить</translation>
     </message>
@@ -1805,8 +1805,8 @@ Please check the address and try again.</source>
         <translation>Не удалось запустить feirm: обработчик click-to-pay </translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</source>
-        <translation>URI не интерпретируется! Причиной этому может быть неверный FRM адрес или неверные параметеры URI.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</source>
+        <translation>URI не интерпретируется! Причиной этому может быть неверный XFE адрес или неверные параметеры URI.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1891,8 +1891,8 @@ Please check the address and try again.</source>
         <translation>Сумма</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>Введите адрес FRM (например %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>Введите адрес XFE (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2406,8 +2406,8 @@ Please check the address and try again.</source>
         <translation>Изменить:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2486,8 +2486,8 @@ Please check the address and try again.</source>
         <translation>Копировать изменение</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>Предупреждение: неправильный FRM адрес</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>Предупреждение: неправильный XFE адрес</translation>
     </message>
     <message>
         <source>and SwiftTX</source>
@@ -2551,8 +2551,8 @@ Please check the address and try again.</source>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>Адрес FRM для подписи сообщения с помощью</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>Адрес XFE для подписи сообщения с помощью</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2575,16 +2575,16 @@ Please check the address and try again.</source>
         <translation>Копировать текущую подпись в системный буфер обмена</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Подпишите сообщение, чтобы подтвердить свой адрес FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Подпишите сообщение, чтобы подтвердить свой адрес XFE</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>Адрес FRM, которым подписано сообщение</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>Адрес XFE, которым подписано сообщение</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным FRM адресом </translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Проверте сообщение, чтобы убедиться, что оно было подписано указанным XFE адресом </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

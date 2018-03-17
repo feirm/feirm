@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>選擇要匯出FRM幣的位址</translation>
+        <translation>選擇要匯出XFE幣的位址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>選擇要接收FRM幣的位址</translation>
+        <translation>選擇要接收XFE幣的位址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收的位址</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>這是你用來付款的 FRM 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>這是你用來付款的 XFE 位址, 送出前, 請務必確認金額及接收位址是否正確.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>這是你用來接收款項的 FRM 位址, 建議你每次付款都使用新的位址.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>這是你用來接收款項的 XFE 位址, 建議你每次付款都使用新的位址.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -164,16 +164,16 @@
         <translation>錢包確認加密</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 FRM 幣被可疑軟體或病毒偷走的風險.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm 現在會關閉程式來處理加密流程, 請注意, 僅僅是加密你的錢包並不能完全保護你的 XFE 幣被可疑軟體或病毒偷走的風險.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>確定要加密你的錢包?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(FRM)&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>請注意: 如果你加密了你的錢包但是卻忘記你設定的密碼, &lt;b&gt;你將會失去錢包裡的錢(XFE)&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,16 +227,16 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>輸入你想 BIP 38 加密的 FRM 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>輸入你想 BIP 38 加密的 XFE 位址, 輸入密碼在中間欄, 按下加密按鈕來產生加密私鑰.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>位址:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>對訊息簽名的 FRM 位址</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>對訊息簽名的 XFE 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -267,8 +267,8 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>使用簽章來證明你是該  FRM 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>使用簽章來證明你是該  XFE 位址的擁有者,</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -287,12 +287,12 @@
         <translation>&amp;BIP 38 解密</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>此訊息之 FRM 位址已簽章於</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>此訊息之 XFE 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>驗證訊息以確保該  FRM 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>驗證訊息以確保該  XFE 位址已被簽章</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,8 +586,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>送出錢幣到 FRM 地址</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>送出錢幣到 XFE 地址</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -614,12 +614,12 @@
         <translation>修改 Feirm 設定</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>使用你的 FRM 位址對訊息簽章, 來證明你是擁有者</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>使用你的 XFE 位址對訊息簽章, 來證明你是擁有者</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>驗證訊息簽章與 FRM 位址吻合</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>驗證訊息簽章與 XFE 位址吻合</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -814,8 +814,8 @@
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>對訊息簽名的 FRM 位址</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>對訊息簽名的 XFE 位址</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -838,16 +838,16 @@
         <translation>拷貝目前的簽章到系統剪貼簿</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>使用簽章來證明你是該  FRM 位址的擁有者,</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>使用簽章來證明你是該  XFE 位址的擁有者,</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>此訊息之 FRM 位址已簽章於</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>此訊息之 XFE 位址已簽章於</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>驗證訊息以確保該  FRM 位址已被簽章</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>驗證訊息以確保該  XFE 位址已被簽章</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>

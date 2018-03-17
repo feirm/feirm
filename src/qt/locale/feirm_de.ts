@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Wählen Sie die Adresse aus, an die Sie FRM überweisen möchten</translation>
+        <translation>Wählen Sie die Adresse aus, an die Sie XFE überweisen möchten</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Wählen Sie die Adresse aus, über die Sie FRM empfangen wollen</translation>
+        <translation>Wählen Sie die Adresse aus, über die Sie XFE empfangen wollen</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Empfangsadressen</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dies sind ihre FRM-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie FRM überweisen.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dies sind ihre XFE-Adressen zum Tätigen von Überweisungen. Bitte prüfen Sie den Betrag und die Empfangsadresse, bevor Sie XFE überweisen.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dies sind ihre FRM-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dies sind ihre XFE-Adressen zum Empfangen von Zahlungen. Es wird empfohlen für jede Transaktion eine neue Empfangsadresse zu verwenden.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer FRMs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Die Anwendungs wird nun geschlossen um die Verschlüsselung abzuschließen. Bitte beachten Sie, dass auch Verschlüsselung nicht nicht vollständig vor Diebstahl ihrer XFEs durch Schadsoftware schützt, die ihren Computer befällt.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Sind Sie sich sicher, dass Sie ihre Wallet verschlüsseln möchten?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre FRMs verlieren&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Warnung: Wenn Sie ihre Wallet verschlüsseln und Ihre Passphrase verlieren werden Sie &lt;b&gt;alle ihre XFEs verlieren&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,16 +235,16 @@
         <translation>&amp;BIP 38 Verschlüsselung</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Gib eine FRM Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Gib eine XFE Adresse ein welche mit BIP 38 verschlüsselt werden soll. Gib ein Passwort in die mittleren Box ein. Drücke auf verschlüsseln, um den privaten schlüssel zu errechenen.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>FRM Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>XFE Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese FRM Adresse besitzt</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese XFE Adresse besitzt</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -299,12 +299,12 @@
         <translation>Geben Sie den BIP 38 verschlüsselten privaten Schlüssel ein. Geben Sie die Passphrase im mittleren Feld ein. Klicken Sie auf Entschlüsselung, um den privaten Schlüssel zu berechnen. Nachdem der Schlüssel entschlüsselt wurde, klicken Sie auf 'Adresse importieren', fügen Sie diesen privaten Schlüssel der Wallet hinzu.</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>Die FRM Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>Die XFE Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen FRM-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen XFE-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,8 +602,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>An eine FRM-Adresse überweisen</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>An eine XFE-Adresse überweisen</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -634,12 +634,12 @@
         <translation>Konfiguration von Feirm verändern</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Unterschreibt eine Nachricht mit Ihrer FRM-Adresse und beweist, dass sie Ihnen gehört</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Unterschreibt eine Nachricht mit Ihrer XFE-Adresse und beweist, dass sie Ihnen gehört</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten FRM-Adresse signiert wurde</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Überprüft eine Nachricht um zu prüfen ob diese mit einer bestimmten XFE-Adresse signiert wurde</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1010,8 +1010,8 @@ Adresse: %4</translation>
         <translation>mittel-hoch</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>Kann um +/- %1 uFRM pro Eingang variieren.</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>Kann um +/- %1 uXFE pro Eingang variieren.</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1125,8 +1125,8 @@ Adresse: %4</translation>
         <translation>Zahlungsadresse bearbeiten</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>Die eingegebene Adresse "%1" ist keine gültige FRM-Adresse.</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>Die eingegebene Adresse "%1" ist keine gültige XFE-Adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1384,12 +1384,12 @@ Adresse: %4</translation>
         <translation>Zieladresse eingeben</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other FRM addresses after it matures.
-To Add: enter percentage to give and FRM address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other XFE addresses after it matures.
+To Add: enter percentage to give and XFE address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen FRM-Adressen zu senden.
-Zum hinzufügen: Gebe den Prozentsätze ein, um die FRM-Adressen des MultiSend-Vektor hinzuzufügen.
+        <translation>MultiSend ermöglicht es automatisch bis zu 100% Ihrer Stake- oder Masternode-Belohnung zu einer Liste von anderen XFE-Adressen zu senden.
+Zum hinzufügen: Gebe den Prozentsätze ein, um die XFE-Adressen des MultiSend-Vektor hinzuzufügen.
 Zum entfernen: Gebe die zu löschende Adresse ein und drücke löschen.
 MultiSend wird nicht aktiviert bis Sie auf Aktivieren geklickt haben.</translation>
     </message>
@@ -1749,8 +1749,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Formular</translation>
     </message>
     <message>
-        <source>FRM Balances</source>
-        <translation>FRM Bilanzen</translation>
+        <source>XFE Balances</source>
+        <translation>XFE Bilanzen</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1813,8 +1813,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Verfügbar:</translation>
     </message>
     <message>
-        <source>FRM:</source>
-        <translation>FRM:</translation>
+        <source>XFE:</source>
+        <translation>XFE:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1856,8 +1856,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Kann feirm nicht starten: click-to-pay Handler</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid FRM address or malformed URI parameters.</source>
-        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige FRM-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid XFE address or malformed URI parameters.</source>
+        <translation>URI kann nicht analysiert werden! Dies kann durch eine ungültige XFE-Adresse oder fehlerhafte URI-Parameter verursacht sein.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -1942,8 +1942,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Betrag</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>FRM-Adresse eingeben (z.B. %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>XFE-Adresse eingeben (z.B. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2477,7 +2477,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>FRMs überweisen</translation>
+        <translation>XFEs überweisen</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2548,8 +2548,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>UTXO Größe:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2600,12 +2600,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Coins automatisch ausgewählt</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uFRMs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uFRMs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uFRMs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uXFEs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uXFEs an Gebühr,&lt;br /&gt;während man "mindestens" 1000 uXFEs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "total at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Wenn die kundenspezifische Gebühr auf 1000 uFRMs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uFRMs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uFRMs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "total at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Wenn die kundenspezifische Gebühr auf 1000 uXFEs eingestellt ist und die Transaktion nur 250 Bytes beträgt, dann zahlt man "pro Kilobyte" nur 250 uXFEs an Gebühr,&lt;br /&gt;während man "insgesamt mindestens" 1000 uXFEs bezahlt. Für Transaktionen, die größer sind als ein Kilobyte, bezahlen sie mit Kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Feirm transactions than the network can process.</source>
@@ -2708,8 +2708,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>benutzend</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>Warnung: Ungültige FRM-Adresse</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>Warnung: Ungültige XFE-Adresse</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2807,8 +2807,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>E&amp;mpfänger:</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>FRM-Adresse, an die überwiesen werden soll</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>XFE-Adresse, an die überwiesen werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2897,8 +2897,8 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Sie können Nachrichten mit Ihren Adressen signieren, um zu beweisen, dass Sie sie besitzen. Sein Sie vorsichtig nichts nebulöses zu unterschreiben, da Phishing-Angriffe versuchen können, Sie dazu zu bringen, Ihre Identität zu denen zu untergeben. Unterschreiben Sie nur ganz detaillierte Aussagen, denen Sie zustimmen.</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>FRM Adresse mit welcher die Nachricht signiert werden soll</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>XFE Adresse mit welcher die Nachricht signiert werden soll</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2929,16 +2929,16 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Kopiert die aktuelle Signatur in den Zwischenspeicher</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Signiere die Nachricht um zu Beweisen, dass du diese FRM Adresse besitzt</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Signiere die Nachricht um zu Beweisen, dass du diese XFE Adresse besitzt</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>Die FRM Adresse mit welcher die Nachricht signiert wurde.</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>Die XFE Adresse mit welcher die Nachricht signiert wurde.</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen FRM-Adresse signiert wurde.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Überprüfen Sie die Nachricht, um sicherzustellen, dass sie mit der angegebenen XFE-Adresse signiert wurde.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3215,7 +3215,7 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Erzeugte FRMs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine FRMs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
+        <translation>Erzeugte XFEs müssen %1 Blöcke lang reifen, bevor sie ausgegeben werden können. Als Sie diesen Block erzeugten, wurde er an das Netzwerk übertragen, um ihn der Blockkette hinzuzufügen. Falls dies fehlschlägt wird der Status in "nicht angenommen" geändert und Sie werden keine XFEs gutgeschrieben bekommen. Das kann gelegentlich passieren, wenn ein anderer Knoten einen Block fast zeitgleich erzeugt.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3541,11 +3541,11 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>FRMs überweisen</translation>
+        <translation>XFEs überweisen</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FRM.</source>
-        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 FRM begrenzt.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XFE.</source>
+        <translation>SwiftTX unterstützt das Versenden von Beträgen dieser Höhe noch nicht. Transaktionen sind zur Zeit auf maximal %1 XFE begrenzt.</translation>
     </message>
 </context>
 <context>
@@ -3658,12 +3658,12 @@ Bitte Adresse überprüfen und nochmals versuchen.</translation>
         <translation>Befehl ausführen, wenn sich der beste Block ändert (%s in cmd wird durch Blockhash ersetzt)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Gebühren (in FRM/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Gebühren (in XFE/kB) kleiner als diese gelten als Null-Gebühr für die Weiterleitung (default: %s)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Gebühren (in FRM/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Gebühren (in XFE/kB) kleiner als diese werden als Null-Gebühr für die Transaktionserstellung betrachtet (default: %s)</translation>
     </message>
     <message>
         <source>Flush database activity from memory pool to disk log every &lt;n&gt; megabytes (default: %u)</source>

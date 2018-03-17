@@ -84,10 +84,10 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'FRMaddress'\fR
+\fBgetaccount 'XFEaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'FRMaddress' ['account']\fR
+\fBsetaccount 'XFEaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
@@ -112,7 +112,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate FRM, false otherwise.
+Returns boolean true if server is trying to generate XFE, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, \-1 is unlimited.
@@ -129,8 +129,8 @@ Returns a new feirm address for receiving payments. If 'account' is specified (r
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'FRMaddress' ['minconf=1']\fR
-Returns the total amount received by 'FRMaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'XFEaddress' ['minconf=1']\fR
+Returns the total amount received by 'XFEaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'FRMaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'FRMaddress'. This method will fail if there is less than amount FRM with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'XFEaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'XFEaddress'. This method will fail if there is less than amount XFE with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'FRMaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'FRMaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'XFEaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'XFEaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the Feirm server.
 .TP
-\fBvalidateaddress 'FRMaddress'\fR
-Checks that 'FRMaddress' looks like a proper feirm address. Returns an object containing:
+\fBvalidateaddress 'XFEaddress'\fR
+Checks that 'XFEaddress' looks like a proper feirm address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : FRMaddress.
+    "address" : XFEaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

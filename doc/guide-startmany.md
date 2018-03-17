@@ -56,9 +56,9 @@ Create a new wallet address for each MasterNode.
 
 Close your QT Wallet.
 
-### Send 1,000 FRM to New Addresses
+### Send 1,000 XFE to New Addresses
 
-Just like setting up a standard MN. Send exactly 1,000 FRM to each new address created above.
+Just like setting up a standard MN. Send exactly 1,000 XFE to each new address created above.
 
 ### Create New Masternode Private Keys
 
@@ -78,11 +78,11 @@ Remember... this is local. Make sure your QT is not running.
 
 Create the masternode.conf file in the same directory as your wallet.dat.
 
-Copy the masternode private key and correspondig collateral output transaction that holds the 2,500 FRM.
+Copy the masternode private key and correspondig collateral output transaction that holds the 2,500 XFE.
 
 The masternode private key may be an existing key from [Option 1](#option1), or a newly generated key from [Option 2](#option2).
 
-*Please note, the masternode private key is not the same as a wallet private key. Never put your wallet private key in the masternode.conf file. That is equivalent to putting your 1,000 FRM on the remote server and defeats the purpose of a hot/cold setup.*
+*Please note, the masternode private key is not the same as a wallet private key. Never put your wallet private key in the masternode.conf file. That is equivalent to putting your 1,000 XFE on the remote server and defeats the purpose of a hot/cold setup.*
 
 ### Get the collateral output
 

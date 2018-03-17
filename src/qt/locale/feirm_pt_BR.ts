@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços FRM para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your XFE addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços XFE para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your FRM addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços FRM para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your XFE addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços XFE para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas FRMs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas XFEs de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS FRM&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS XFE&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -231,7 +231,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -239,8 +239,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>O endereço FRM para assinar a mensagem</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>O endereço XFE para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -271,8 +271,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço XFE</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -287,12 +287,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>O endereço FRM que assinou a mensagem</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>O endereço XFE que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço FRM especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço XFE especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,8 +586,8 @@
         <translation>Feirm Core</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Enviar moedas para um endereço FRM</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Enviar moedas para um endereço XFE</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -614,12 +614,12 @@
         <translation>Modificar opções de configuração para Feirm</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços FRM para provar que você os detém</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços XFE para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços FRM especificados</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços XFE especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -964,8 +964,8 @@ MultiSend: %1</translation>
         <translation>médio-alto</translation>
     </message>
     <message>
-        <source>Can vary +/- %1 uFRM per input.</source>
-        <translation>pode variar entre +/-%1 uFRM por input</translation>
+        <source>Can vary +/- %1 uXFE per input.</source>
+        <translation>pode variar entre +/-%1 uXFE por input</translation>
     </message>
     <message>
         <source>medium</source>
@@ -1079,8 +1079,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de FRM</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de XFE</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1739,8 +1739,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>Insira um endereço FRM (e.g. %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>Insira um endereço XFE (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2241,8 +2241,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2281,8 +2281,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uFRMs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uFRMs in fee,&lt;br /&gt;while "at least" pays 1000 uFRMs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uFRMs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uFRMs em taxa,&lt;br /&gt; pagará pelo menos 1000 uFRMs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uXFEs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uXFEs in fee,&lt;br /&gt;while "at least" pays 1000 uXFEs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uXFEs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uXFEs em taxa,&lt;br /&gt; pagará pelo menos 1000 uXFEs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
         <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for Feirm transactions than the network can process.</source>
@@ -2369,8 +2369,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>usando</translation>
     </message>
     <message>
-        <source>Warning: Invalid FRM address</source>
-        <translation>Aviso: endereço FRM inválido</translation>
+        <source>Warning: Invalid XFE address</source>
+        <translation>Aviso: endereço XFE inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2460,8 +2460,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>O endereço FRM para enviar o pagamento</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>O endereço XFE para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2542,8 +2542,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>O endereço FRM para assinar a mensagem</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>O endereço XFE para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2574,16 +2574,16 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço XFE</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>O endereço FRM que assinou a mensagem</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>O endereço XFE que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço FRM especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço XFE especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3157,8 +3157,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 FRM.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 FRM.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 XFE.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 XFE.</translation>
     </message>
 </context>
 <context>
@@ -3223,12 +3223,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em FRM/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em XFE/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in FRM/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em FRM/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in XFE/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em XFE/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3251,8 +3251,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 FRM.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 FRM.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 XFE.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 XFE.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3435,8 +3435,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in FRM/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em FRM/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in XFE/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em XFE/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>

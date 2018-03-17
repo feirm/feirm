@@ -31,9 +31,9 @@ SendCoinsEntry::SendCoinsEntry(QWidget* parent) : QStackedWidget(parent),
     ui->addAsLabel->setPlaceholderText(tr("Enter a label for this address to add it to your address book"));
 #endif
 
-    // normal FRM address field
+    // normal XFE address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying FRM address(es)
+    // just a label for displaying XFE address(es)
     ui->payTo_is->setFont(GUIUtil::bitcoinAddressFont());
 
     // Connect signals
@@ -99,7 +99,7 @@ void SendCoinsEntry::clear()
     ui->memoTextLabel_s->clear();
     ui->payAmount_s->clear();
 
-    // update the display unit, to not use the default ("FRM")
+    // update the display unit, to not use the default ("XFE")
     updateDisplayUnit();
 }
 

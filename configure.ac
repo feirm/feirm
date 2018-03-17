@@ -19,9 +19,9 @@ BITCOIN_TX_NAME=feirm-tx
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef FRM_CONFIG_H])
-AH_TOP([#define FRM_CONFIG_H])
-AH_BOTTOM([#endif //FRM_CONFIG_H])
+AH_TOP([#ifndef XFE_CONFIG_H])
+AH_TOP([#define XFE_CONFIG_H])
+AH_BOTTOM([#endif //XFE_CONFIG_H])
 
 dnl faketime breaks configure and is only needed for make. Disable it here.
 unset FAKETIME

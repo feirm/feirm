@@ -82,10 +82,10 @@ UniValue importprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
-            "importprivkey \"frmprivkey\" ( \"label\" rescan )\n"
+            "importprivkey \"xfeprivkey\" ( \"label\" rescan )\n"
             "\nAdds a private key (as returned by dumpprivkey) to your wallet.\n"
             "\nArguments:\n"
-            "1. \"frmprivkey\"   (string, required) The private key (see dumpprivkey)\n"
+            "1. \"xfeprivkey\"   (string, required) The private key (see dumpprivkey)\n"
             "2. \"label\"            (string, optional, default=\"\") An optional label\n"
             "3. rescan               (boolean, optional, default=true) Rescan the wallet for transactions\n"
             "\nNote: This call can take minutes to complete if rescan is true.\n"
@@ -169,7 +169,7 @@ UniValue importaddress(const UniValue& params, bool fHelp)
         std::vector<unsigned char> data(ParseHex(params[0].get_str()));
         script = CScript(data.begin(), data.end());
     } else {
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid FRM address or script");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid XFE address or script");
     }
 
     string strLabel = "";
@@ -307,11 +307,11 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey \"frmaddress\"\n"
-            "\nReveals the private key corresponding to 'frmaddress'.\n"
+            "dumpprivkey \"xfeaddress\"\n"
+            "\nReveals the private key corresponding to 'xfeaddress'.\n"
             "Then the importprivkey can be used with this output\n"
             "\nArguments:\n"
-            "1. \"frmaddress\"   (string, required) The frm address for the private key\n"
+            "1. \"xfeaddress\"   (string, required) The XFE address for the private key\n"
             "\nResult:\n"
             "\"key\"                (string) The private key\n"
             "\nExamples:\n" +
@@ -322,7 +322,7 @@ UniValue dumpprivkey(const UniValue& params, bool fHelp)
     string strAddress = params[0].get_str();
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid FRM address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid XFE address");
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -395,10 +395,10 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38encrypt \"frmaddress\"\n"
-            "\nEncrypts a private key corresponding to 'frmaddress'.\n"
+            "bip38encrypt \"xfeaddress\"\n"
+            "\nEncrypts a private key corresponding to 'xfeaddress'.\n"
             "\nArguments:\n"
-            "1. \"frmaddress\"   (string, required) The frm address for the private key (you must hold the key already)\n"
+            "1. \"xfeaddress\"   (string, required) The XFE address for the private key (you must hold the key already)\n"
             "2. \"passphrase\"   (string, required) The passphrase you want the private key to be encrypted with - Valid special chars: !#$%&'()*+,-./:;<=>?`{|}~ \n"
             "\nResult:\n"
             "\"key\"                (string) The encrypted private key\n"
@@ -411,7 +411,7 @@ UniValue bip38encrypt(const UniValue& params, bool fHelp)
 
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid FRM address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid XFE address");
     CKeyID keyID;
     if (!address.GetKeyID(keyID))
         throw JSONRPCError(RPC_TYPE_ERROR, "Address does not refer to a key");
@@ -433,7 +433,7 @@ UniValue bip38decrypt(const UniValue& params, bool fHelp)
 {
     if (fHelp || params.size() != 2)
         throw runtime_error(
-            "bip38decrypt \"frmaddress\"\n"
+            "bip38decrypt \"xfeaddress\"\n"
             "\nDecrypts and then imports password protected private key.\n"
             "\nArguments:\n"
             "1. \"encryptedkey\"   (string, required) The encrypted private key\n"

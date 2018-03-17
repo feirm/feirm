@@ -211,9 +211,9 @@ elif cmd == "listtransactions":
     try:
         acct = raw_input("Account (optional): ")
         count = raw_input("Number of transactions (optional): ")
-        frm = raw_input("Skip (optional):")
+        XFE = raw_input("Skip (optional):")
         try:
-            print access.listtransactions(acct, count, frm)
+            print access.listtransactions(acct, count, XFE)
         except:
             print access.listtransactions()
     except:
@@ -221,43 +221,43 @@ elif cmd == "listtransactions":
 
 elif cmd == "move":
     try:
-        frm = raw_input("From: ")
+        XFE = raw_input("From: ")
         to = raw_input("To: ")
         amt = raw_input("Amount:")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         try:
-            print access.move(frm, to, amt, mc, comment)
+            print access.move(XFE, to, amt, mc, comment)
         except:
-            print access.move(frm, to, amt)
+            print access.move(XFE, to, amt)
     except:
         print "\n---An error occurred---\n"
 
 elif cmd == "sendfrom":
     try:
-        frm = raw_input("From: ")
+        XFE = raw_input("From: ")
         to = raw_input("To: ")
         amt = raw_input("Amount:")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         commentto = raw_input("Comment-to (optional): ")
         try:
-            print access.sendfrom(frm, to, amt, mc, comment, commentto)
+            print access.sendfrom(XFE, to, amt, mc, comment, commentto)
         except:
-            print access.sendfrom(frm, to, amt)
+            print access.sendfrom(XFE, to, amt)
     except:
         print "\n---An error occurred---\n"
 
 elif cmd == "sendmany":
     try:
-        frm = raw_input("From: ")
+        XFE = raw_input("From: ")
         to = raw_input("To (in format address1:amount1,address2:amount2,...): ")
         mc = raw_input("Minimum confirmations (optional): ")
         comment = raw_input("Comment (optional): ")
         try:
-            print access.sendmany(frm,to,mc,comment)
+            print access.sendmany(XFE,to,mc,comment)
         except:
-            print access.sendmany(frm,to)
+            print access.sendmany(XFE,to)
     except:
         print "\n---An error occurred---\n"
 

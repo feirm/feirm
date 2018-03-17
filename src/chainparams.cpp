@@ -114,7 +114,7 @@ public:
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
-        nModifierUpdateBlock = 1; // we use the version 2 for FRM
+        nModifierUpdateBlock = 1; // we use the version 2 for XFE
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot

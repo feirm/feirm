@@ -144,8 +144,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE FRM!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE XFE!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -223,8 +223,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres FRM jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres XFE jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,8 +518,8 @@
         <translation>&amp;Rdzeń Feirm</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Wyślij monety do adresu FRM</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Wyślij monety do adresu XFE</translation>
     </message>
     <message>
         <source>Request payments (generates QR codes and feirm: URIs)</source>
@@ -546,12 +546,12 @@
         <translation>Modyfikuj opcje konfiguracji Feirm</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami FRM, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami XFE, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu FRM</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu XFE</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -1361,8 +1361,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a FRM address (e.g. %1)</source>
-        <translation>Wprowadź adres FRM (np. %1)</translation>
+        <source>Enter a XFE address (e.g. %1)</source>
+        <translation>Wprowadź adres XFE (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1800,8 +1800,8 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres FRM jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres XFE jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>

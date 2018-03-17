@@ -152,16 +152,16 @@
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
     <message>
-        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your FRMs from being stolen by malware infecting your computer.</source>
-        <translation>Feirm va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos FRMs d'un vol par un malware ayant infecté votre ordinateur. </translation>
+        <source>Feirm will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your XFEs from being stolen by malware infecting your computer.</source>
+        <translation>Feirm va maintenant se fermer pour finir le processus cryptage. Notez que le cryptage de votre portefeuille ne peut pas complètement protéger vos XFEs d'un vol par un malware ayant infecté votre ordinateur. </translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Êtes-vous sûr de vouloir crypter votre portefeuille?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FRM&lt;/b&gt;!</source>
-        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS FRM&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XFE&lt;/b&gt;!</source>
+        <translation>Attention : si vous cryptez votre portefeuille et perdez votre phrase secrète, vous &lt;b&gt;PERDREZ TOUS VOS XFE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -211,16 +211,16 @@
         <translation>BIP 38 crypter</translation>
     </message>
     <message>
-        <source>Enter a FRM Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Entrez une adresse FRM que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
+        <source>Enter a XFE Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Entrez une adresse XFE que vous voulez crypter en utilisant BIP 38. Entrez une phrase secrète dans le champ du milieu. Cliquez sur crypter pour calculer la clé de cryptage privée.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresse :</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>L'adresse FRM avec laquelle signer le message</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>L'adresse XFE avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -251,8 +251,8 @@
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse XFE</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -271,12 +271,12 @@
         <translation>BIP 38 Décrypter</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>L'adresse FRM avec laquelle le message a été signé</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>L'adresse XFE avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse FRM renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse XFE renseignée</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -534,8 +534,8 @@
         <translation>&amp;Aide</translation>
     </message>
     <message>
-        <source>Send coins to a FRM address</source>
-        <translation>Envoyer des pièces à une adresse FRM</translation>
+        <source>Send coins to a XFE address</source>
+        <translation>Envoyer des pièces à une adresse XFE</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -546,16 +546,16 @@
         <translation>Afficher les masternodes</translation>
     </message>
     <message>
-        <source>Modify configuration options for FRM</source>
-        <translation>Modifier les options de configuration pour FRM</translation>
+        <source>Modify configuration options for XFE</source>
+        <translation>Modifier les options de configuration pour XFE</translation>
     </message>
     <message>
-        <source>Sign messages with your FRM addresses to prove you own them</source>
-        <translation>Signer les messages avec votre adresse FRM pour prouver qu'elles sont bien à vous.</translation>
+        <source>Sign messages with your XFE addresses to prove you own them</source>
+        <translation>Signer les messages avec votre adresse XFE pour prouver qu'elles sont bien à vous.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified FRM addresses</source>
-        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse FRM spécifié</translation>
+        <source>Verify messages to ensure they were signed with specified XFE addresses</source>
+        <translation>Vérifier les messages afin de s'assurer qu'ils sont signés avec l'adresse XFE spécifié</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -854,8 +854,8 @@ Adresse : %4
         <translation>Modifier l'adresse d'envoi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid FRM address.</source>
-        <translation>L'adresse entrée "%1" n'est pas une adresse FRM valide</translation>
+        <source>The entered address "%1" is not a valid XFE address.</source>
+        <translation>L'adresse entrée "%1" n'est pas une adresse XFE valide</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1319,8 +1319,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Après commission</translation>
     </message>
     <message>
-        <source>0 FRM</source>
-        <translation>0 FRM</translation>
+        <source>0 XFE</source>
+        <translation>0 XFE</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -1402,8 +1402,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Payer à :</translation>
     </message>
     <message>
-        <source>The FRM address to send the payment to</source>
-        <translation>L'adresse FRM à laquelle envoyer le paiement</translation>
+        <source>The XFE address to send the payment to</source>
+        <translation>L'adresse XFE à laquelle envoyer le paiement</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1448,8 +1448,8 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Signer le message</translation>
     </message>
     <message>
-        <source>The FRM address to sign the message with</source>
-        <translation>L'adresse FRM avec laquelle signer le message</translation>
+        <source>The XFE address to sign the message with</source>
+        <translation>L'adresse XFE avec laquelle signer le message</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1476,16 +1476,16 @@ Veuillez vérifier l'adresse et réessayer.</translation>
         <translation>Copier la signature actuelle dans le presse-papier</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this FRM address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse FRM</translation>
+        <source>Sign the message to prove you own this XFE address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse XFE</translation>
     </message>
     <message>
-        <source>The FRM address the message was signed with</source>
-        <translation>L'adresse FRM avec laquelle le message a été signé</translation>
+        <source>The XFE address the message was signed with</source>
+        <translation>L'adresse XFE avec laquelle le message a été signé</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified FRM address</source>
-        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse FRM renseignée</translation>
+        <source>Verify the message to ensure it was signed with the specified XFE address</source>
+        <translation>Vérifiez le message afin de vous assurer qu'il a été signé avec l'adresse XFE renseignée</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
