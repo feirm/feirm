@@ -243,11 +243,12 @@ bool CWallet::LoadMultiSig(const CScript& dest)
     return CCryptoKeyStore::AddMultiSig(dest);
 }
 
-bool CWallet::Unlock(const SecureString& strWalletPassphrase)
+bool CWallet::Unlock(const SecureString& strWalletPassphrase, bool stakingOnly)
 {
     SecureString strWalletPassphraseFinal;
 
     if (!IsLocked()) {
+        fWalletUnlockStakingOnly = stakingOnly;
         return true;
     }
 
@@ -264,6 +265,7 @@ bool CWallet::Unlock(const SecureString& strWalletPassphrase)
             if (!crypter.Decrypt(pMasterKey.second.vchCryptedKey, vMasterKey))
                 continue; // try another master key
             if (CCryptoKeyStore::Unlock(vMasterKey)) {
+                fWalletUnlockStakingOnly = stakingOnly;
                 return true;
             }
         }
@@ -1355,7 +1357,7 @@ bool CWallet::SelectStakeCoins(std::set<std::pair<const CWalletTx*, unsigned int
         int64_t nTxTime = out.tx->GetTxTime();
 
         //check for min age
-        if (GetAdjustedTime() - nTxTime < nStakeMinAge)
+        if (GetAdjustedTime() - out.tx->GetTxTime() < nStakeMinAge)
             continue;
 
         //check that it is matured
