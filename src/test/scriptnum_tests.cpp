@@ -9,8 +9,16 @@
 #include <stdint.h>
 BOOST_AUTO_TEST_SUITE(scriptnum_tests)
 
+#ifdef __arm__   // Workaround for RasPi3 wallet compilation    
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wnarrowing"
+#endif    
 static const long values[] = \
 { 0, 1, CHAR_MIN, CHAR_MAX, UCHAR_MAX, SHRT_MIN, USHRT_MAX, INT_MIN, INT_MAX, UINT_MAX, LONG_MIN, LONG_MAX };
+#ifdef __ARM_ARCH_7__   // Workaround for RasPi3 wallet compilation 
+#pragma GCC diagnostic pop
+#endif
+
 static const long offsets[] = { 1, 0x79, 0x80, 0x81, 0xFF, 0x7FFF, 0x8000, 0xFFFF, 0x10000};
 
 static bool verify(const CBigNum& bignum, const CScriptNum& scriptnum)
