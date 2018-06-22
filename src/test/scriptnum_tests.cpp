@@ -9,7 +9,7 @@
 #include <stdint.h>
 BOOST_AUTO_TEST_SUITE(scriptnum_tests)
 
-#ifdef __ARM_ARCH_7__   // Workaround for RasPi3 wallet compilation    
+#ifdef __arm__   // Workaround for RasPi3 wallet compilation    
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wnarrowing"
 #endif    
