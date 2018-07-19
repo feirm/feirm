@@ -64,6 +64,7 @@ public:
         bn = BN_new();
         SetHexBool(str);
     }
+    
 
     CBigNum(const CBigNum& b)
     {
@@ -92,7 +93,7 @@ public:
     CBigNum(short n)            { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
     CBigNum(int n)              { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
     CBigNum(long n)             { bn = BN_new(); if (n >= 0) setulong(n); else setint64(n); }
-#ifdef __APPLE__
+#ifdef __APPLE__	
     CBigNum(int64_t n)            { bn = BN_new(); setint64(n); }
 #endif
     CBigNum(unsigned char n)    { bn = BN_new(); setulong(n); }
@@ -175,7 +176,7 @@ public:
 
         if (sn < (int64_t)0)
         {
-            // Since the minimum signed integer cannot be represented as positive so long as its type is signed,
+            // Since the minimum signed integer cannot be represented as positive so long as its type is signed, 
             // and it's not well-defined what happens if you make it unsigned before negating it,
             // we instead increment the negative integer by 1, convert it, then increment the (now positive) unsigned integer by 1 to compensate
             n = -(sn + 1);
@@ -441,8 +442,8 @@ public:
         CAutoBN_CTX pctx;
         CBigNum bnBase = nBase;
         CBigNum bn0 = 0;
+	CBigNum locBn = *this;
         std::string str;
-        CBigNum locBn = *this;
         BN_set_negative(locBn.bn, false);
         CBigNum dv;
         CBigNum rem;
@@ -591,7 +592,7 @@ public:
     */
     bool isPrime(const int checks=BN_prime_checks) const {
         CAutoBN_CTX pctx;
-        int ret = BN_is_prime(bn, checks, NULL, pctx, NULL);
+        int ret = BN_is_prime_ex(bn, checks, pctx, NULL);
         if(ret < 0){
             throw bignum_error("CBigNum::isPrime :BN_is_prime");
         }
@@ -618,7 +619,8 @@ public:
 
     CBigNum& operator-=(const CBigNum& b)
     {
-        *this = *this - b;
+        if (!BN_sub(bn, bn, b.bn))
+	    throw bignum_error("CBigNum::operator-= : BN_sub failed");
         return *this;
     }
 
@@ -632,17 +634,17 @@ public:
 
     CBigNum& operator/=(const CBigNum& b)
     {
-        CAutoBN_CTX pctx;
+	CAutoBN_CTX pctx;
         if (!BN_div(bn, NULL, bn, b.bn, pctx))
-            throw bignum_error("CBigNum::operator/= : BN_div failed");
+	    throw bignum_error("CBigNum::operator/= : BN_div failed");
         return *this;
     }
 
     CBigNum& operator%=(const CBigNum& b)
     {
-        CAutoBN_CTX pctx;
+	CAutoBN_CTX pctx;
         if (!BN_mod(bn, b.bn, bn, pctx))
-            throw bignum_error("CBigNum::operator%= : BN_mod failed");
+	    throw bignum_error("CBigNum::operator%= : BN_mod failed");
         return *this;
     }
 
@@ -710,9 +712,14 @@ public:
     friend inline const CBigNum operator/(const CBigNum& a, const CBigNum& b);
     friend inline const CBigNum operator%(const CBigNum& a, const CBigNum& b);
     friend inline const CBigNum operator*(const CBigNum& a, const CBigNum& b);
+    friend inline const CBigNum operator<<(const CBigNum& a, unsigned int shift);
+    friend inline const CBigNum operator-(const CBigNum& a);
+    friend inline bool operator==(const CBigNum& a, const CBigNum& b);
+    friend inline bool operator!=(const CBigNum& a, const CBigNum& b);
+    friend inline bool operator<=(const CBigNum& a, const CBigNum& b);
+    friend inline bool operator>=(const CBigNum& a, const CBigNum& b);
     friend inline bool operator<(const CBigNum& a, const CBigNum& b);
     friend inline bool operator>(const CBigNum& a, const CBigNum& b);
-
 };
 
 
