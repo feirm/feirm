@@ -77,6 +77,12 @@ UniValue getinfo(const UniValue& params, bool fHelp)
     proxyType proxy;
     GetProxy(NET_IPV4, proxy);
 
+    // During inital block verification chainActive.Tip() might be not yet initialized
+    if (chainActive.Tip() == NULL) {
+        obj.push_back(Pair("status", "Blockchain information not yet available"));
+        return obj;
+    }
+
     UniValue obj(UniValue::VOBJ);
     obj.push_back(Pair("version", CLIENT_VERSION));
     obj.push_back(Pair("protocolversion", PROTOCOL_VERSION));
