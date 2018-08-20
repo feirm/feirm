@@ -5346,7 +5346,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
 
-    if(chainActive.Height() >= SOFT_FORK_VERSION_110)
+    if (chainActive.Height() >= SOFT_FORK_VERSION_110)
         return MIN_PEER_PROTO_VERSION_COLLATERAL_UPGRADE;
     
     return MIN_PEER_PROTO_VERSION;
