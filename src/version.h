@@ -11,7 +11,7 @@
  * network protocol versioning
  */
 
-static const int PROTOCOL_VERSION = 70913;
+static const int PROTOCOL_VERSION = 70914;
 
 //! initial proto version, to be increased after version/verack negotiation
 static const int INIT_PROTO_VERSION = 209;
@@ -19,10 +19,12 @@ static const int INIT_PROTO_VERSION = 209;
 //! In this version, 'getheaders' was introduced.
 static const int GETHEADERS_VERSION = 70077;
 
-//! disconnect from peers older than this proto version
-static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70911;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70912;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT3 = 70913;
+//! disconnect from peers older than this proto version;
+static const int MIN_PEER_PROTO_VERSION = 70913;
+static const int MIN_PEER_PROTO_VERSION_COLLATERAL_UPGRADE = 70914;
+
+//! Soft fork blocks
+static const int SOFT_FORK_VERSION_110 = 210000;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this

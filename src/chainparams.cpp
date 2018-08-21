@@ -230,7 +230,11 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        vSeeds.push_back(CDNSSeedData("seed1.feirm.com", "seed1.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("0", "seed1.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("1", "seed2.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("2", "seed3.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("3", "seed4.feirm.com"));
+        vSeeds.push_back(CDNSSeedData("4", "seed5.feirm.com"));
 
         // Testnet Feirm addresses start with 'g'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 98);
