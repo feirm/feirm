@@ -354,6 +354,7 @@ static const CRPCCommand vRPCCommands[] =
         {"feirm", "checkbudgets", &checkbudgets, true, true, false},
         {"feirm", "mnsync", &mnsync, true, true, false},
         {"feirm", "spork", &spork, true, true, false},
+        {"feirm", "makekeypair", &makekeypair, true, true, false},
 #ifdef ENABLE_WALLET
 
         /* Wallet */
