@@ -178,7 +178,7 @@ public:
         fHeadersFirstSyncingActive = false;
 
         nPoolMaxTransactions = 3;
-        strSporkKey = "049b166b15dd487a22ec57a232f402f7253b7c26002be9a8dab36bd7ac96b33d249622d15eedef3ca77cf20dd936ad7a00aefb763d216722ae31bcac2f0b840046";
+        strSporkKey = "04ee3809fce5a68ee765f5640f0d161a5b9293fd11e9fdc0074a1b7f324dcc7c8a0995b7d4247e38e15aece42bfa30eecae6fb21b2c394733038d438b336e3f2af";
         strMasternodePoolDummyAddress = "GSJVWUkt6HtSCY2SaJ2akeyJUg8bg1hW3S";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis creation
 
