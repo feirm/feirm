@@ -40,6 +40,7 @@ using namespace boost;
 #define SPORK_15_NEW_PROTOCOL_ENFORCEMENT_2 10014
 #define SPORK_16_MN_WINNER_MINIMUM_AGE 10015
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3 75000
+#define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4 275000
 
 #define SPORK_2_SWIFTTX_DEFAULT 978307200                         //2001-1-1
 #define SPORK_3_SWIFTTX_BLOCK_FILTERING_DEFAULT 1424217600        //2015-2-18
@@ -57,6 +58,7 @@ using namespace boost;
                                                                   // misconfigured new nodes in the list.
                                                                   // Set this to zero to emulate classic behaviour
 #define SPORK_17_NEW_PROTOCOL_ENFORCEMENT_3_DEFAULT 4070908800    //OFF
+#define SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4_DEFAULT 4070908800
 
 class CSporkMessage;
 class CSporkManager;
