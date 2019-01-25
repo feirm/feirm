@@ -20,10 +20,11 @@ static const int INIT_PROTO_VERSION = 209;
 static const int GETHEADERS_VERSION = 70077;
 
 //! disconnect from peers older than this proto version;
-static const int MIN_PEER_PROTO_VERSION = 70914;
-static const int MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT = 70915;
+static const int MIN_PEER_PROTO_VERSION = 70915;
+static const int MIN_PEER_PROTO_VERSION_AFTER_FORK = 70916;
+
 //! Soft fork blocks
-static const int SOFT_FORK_VERSION_110 = 210000;
+static const int SOFT_FORK_VERSION_130 = 310000;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this
