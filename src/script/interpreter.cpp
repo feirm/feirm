@@ -3,7 +3,6 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "main.h"
 #include "interpreter.h"
 
 #include "primitives/transaction.h"
@@ -18,8 +17,6 @@
 using namespace std;
 
 typedef vector<unsigned char> valtype;
-
-std::atomic<bool> fCLTVHasMajority;
 
 namespace {
 
@@ -352,10 +349,6 @@ bool EvalScript(vector<vector<unsigned char> >& stack, const CScript& script, un
 
                     if (stack.size() < 1) {
                         return set_error(serror, SCRIPT_ERR_INVALID_STACK_OPERATION);
-                    }
-
-                    if (!fCLTVHasMajority.load()) {
-                        break;
                     }
 
                     // CLTV will only be verified if it is a supermajority.

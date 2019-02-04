@@ -102,9 +102,9 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 1080;
-        nRejectBlockOutdatedMajority = 1368;
-        nToCheckBlockUpgradeMajority = 1440;
+        nEnforceBlockUpgradeMajority = 4050;
+        nRejectBlockOutdatedMajority = 5130;
+        nToCheckBlockUpgradeMajority = 5400;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Feirm: 1 day
         nTargetSpacing = 2 * 60;  // Feirm: 2 minutes
@@ -208,9 +208,9 @@ public:
         pchMessageStart[3] = 0x5c;
         vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
         nDefaultPort = 34912;
-        nEnforceBlockUpgradeMajority = 51;
-        nRejectBlockOutdatedMajority = 75;
-        nToCheckBlockUpgradeMajority = 100;
+        nEnforceBlockUpgradeMajority = 4320;
+        nRejectBlockOutdatedMajority = 5472;
+        nToCheckBlockUpgradeMajority = 5760;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Feirm: 1 day
         nTargetSpacing = 2 * 60;  // Feirm: 1 minute
