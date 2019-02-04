@@ -2027,6 +2027,12 @@ bool DisconnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex
     // move best block pointer to prevout block
     view.SetBestBlock(pindex->pprev->GetBlockHash());
 
+    // Check if supermajority for CLTV has changed
+    bool fPrevCLTV = fCLTVHasMajority.load();
+    fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, chainActive.Tip(), Params().EnforceBlockUpgradeMajority());
+    if (fPrevCLTV && !fCLTVHasMajority.load())
+        LogPrintf("Disconnected to before CHECKLOCKTIMEVERIFY supermajority. Verifications will be skipped.\n");
+
     if (pfClean) {
         *pfClean = fClean;
         return true;
@@ -2338,6 +2344,10 @@ bool static FlushStateToDisk(CValidationState& state, FlushStateMode mode)
                 }
                 setDirtyBlockIndex.erase(it++);
             }
+
+            bool fIsActiveCLTV = fCLTVHasMajority.load();
+            pblocktree->WriteFlag("CLTVHasMajority", fIsActiveCLTV);
+
             pblocktree->Sync();
             // Finally flush the chainstate (which may refer to block index entries).
             if (!pcoinsTip->Flush())
@@ -3627,6 +3637,13 @@ bool ProcessNewBlock(CValidationState& state, CNode* pfrom, CBlock* pblock, CDis
         if (pwalletMain->fCombineDust)
             pwalletMain->AutoCombineDust();
     }
+
+    // If CLTV hasn't been activated, check for a supermajority upon accpeting a new block.
+    if (!fCLTVHasMajority.load() && CBlockIndex::IsSuperMajority(5, chainActive.Tip(),
+        Params().EnforceBlockUpgradeMajority())) {
+            fCLTVHasMajority = true;
+            LogPrintf("CHECKLOCKTIMEVERIFY achieved supermajority! Transactions that use CLTV will now be verified.\n");
+        }
 
     LogPrintf("%s : ACCEPTED in %ld milliseconds with size=%d\n", __func__, GetTimeMillis() - nStartTime,
               pblock->GetSerializeSize(SER_DISK, CLIENT_VERSION));
