@@ -203,7 +203,7 @@ public:
 
     static const size_t nDefaultMaxNumSize = 4;
 
-    explicit CScriptNum(const std::vector<unsigned char>& vch, bool fRequireMinimal, const size_t nMaxSize = nDefaultMaxNumSize)
+    explicit CScriptNum(const std::vector<unsigned char>& vch, bool fRequireMinimal, const size_t nMaxNumSize = nDefaultMaxNumSize)
     {
         if (vch.size() > nMaxNumSize) {
             throw scriptnum_error("script number overflow");
