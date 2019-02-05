@@ -5394,9 +5394,14 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
             if (fDebug) {
                 ostringstream ss;
                 ss << strMsg << " code " << itostr(ccode) << ": " << strReason;
-                ss << ": hash " << hash.ToString();
+
+                if (strMsg == "block" || strMsg == "tx") {
+                    uint256 hash;
+                    vRecv >> hash;
+                    ss << ": hash " << hash.ToString();
+                }
+                LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
             }
-            LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
         } catch (std::ios_base::failure& e) {
             // Avoid feedback loops by preventing reject messages from triggering a new reject message.
             LogPrint("net", "Unparseable reject message received\n");
@@ -5405,6 +5410,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         // If recieved REJECT_OBSELETE, check current protocol version.
         if (ccode == REJECT_OBSOLETE) {
             if (PROTOCOL_VERSION < ActiveProtocol()) {
+                // If node is outdated
                 LogPrintf("Your node is too old (%d), you MUST upgrade to protocol version %d minimum, exiting...", PROTOCOL_VERSION, ActiveProtocol());
                 StartShutdown();
             } else {
