@@ -5451,10 +5451,6 @@ int ActiveProtocol()
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_2;
     }
 
-    if (chainActive.Height() >= SOFT_FORK_VERSION_130) {
-        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
-    }
-
     return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 }
 
