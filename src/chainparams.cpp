@@ -259,7 +259,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "0440f83f0d7311f7820bd863d3b24c03ee5fa241b3554b62d3f15b42234c42dbca99147422ae4550d635a3320f84c0cb6a502d7989d645f1917f9c4cd37d180b57";
+        strSporkKey = "045601ee8dd3414a5d3f44ef8157790cf9a8cc61e5cc5ab579c16976744b30b11da4116ef7d840337a98eb36304adb87b3032265f3ba8ad6e454151f4b1f136ceb";
         strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
