@@ -1259,9 +1259,15 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+        bool fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, chainActive.Tip(), Params().EnforceBlockUpgradeMajority());
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
-        if (!CheckInputs(tx, state, view, true, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
+        int flags = STANDARD_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVHasMajority) {
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        }
+        if (!CheckInputs(tx, state, view, true, flags, true)) {
             return error("AcceptToMemoryPool: : ConnectInputs failed %s", hash.ToString());
         }
 
@@ -1274,7 +1280,11 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
         // There is a similar check in CreateNewBlock() to prevent creating
         // invalid blocks, however allowing such transactions into the mempool
         // can be exploited as a DoS attack.
-        if (!CheckInputs(tx, state, view, true, MANDATORY_SCRIPT_VERIFY_FLAGS, true)) {
+        flags = MANDATORY_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVHasMajority) {
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        }
+        if (!CheckInputs(tx, state, view, true, flags, true)) {
             return error("AcceptToMemoryPool: : BUG! PLEASE REPORT THIS! ConnectInputs failed against MANDATORY but not STANDARD flags %s", hash.ToString());
         }
 
@@ -1444,9 +1454,15 @@ bool AcceptableInputs(CTxMemPool& pool, CValidationState& state, const CTransact
                 hash.ToString(),
                 nFees, ::minRelayTxFee.GetFee(nSize) * 10000);
 
+        bool fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, chainActive.Tip(), Params().EnforceBlockUpgradeMajority());
+
         // Check against previous transactions
         // This is done last to help prevent CPU exhaustion denial-of-service attacks.
-        if (!CheckInputs(tx, state, view, false, STANDARD_SCRIPT_VERIFY_FLAGS, true)) {
+        int flags = STANDARD_SCRIPT_VERIFY_FLAGS;
+        if (fCLTVHasMajority) {
+            flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+        }
+        if (!CheckInputs(tx, state, view, false, flags, true)) {
             return error("AcceptableInputs: : ConnectInputs failed %s", hash.ToString());
         }
 
@@ -2104,6 +2120,12 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
 
     bool fScriptChecks = pindex->nHeight >= Checkpoints::GetTotalBlocksEstimate();
 
+    // If scripts won't be checked anyways, don't bother seeing if CLTV is activated
+    bool fCLTVHasMajority = false;
+    if (fScriptChecks && pindex->pprev) {
+        fCLTVHasMajority = CBlockIndex::IsSuperMajority(5, pindex->pprev, Params().EnforceBlockUpgradeMajority());
+    }
+
     // Do not allow blocks that contain transactions which 'overwrite' older transactions,
     // unless those are already completely spent.
     // If such overwrites are allowed, coinbases and transactions depending upon those
@@ -2181,6 +2203,11 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
             nValueIn += view.GetValueIn(tx);
 
             std::vector<CScriptCheck> vChecks;
+
+            if (fCLTVHasMajority) {
+                flags |= SCRIPT_VERIFY_CHECKLOCKTIMEVERIFY;
+            }
+        
             if (!CheckInputs(tx, state, view, fScriptChecks, flags, false, nScriptCheckThreads ? &vChecks : NULL))
                 return false;
             control.Add(vChecks);
@@ -2338,6 +2365,7 @@ bool static FlushStateToDisk(CValidationState& state, FlushStateMode mode)
                 }
                 setDirtyBlockIndex.erase(it++);
             }
+
             pblocktree->Sync();
             // Finally flush the chainstate (which may refer to block index entries).
             if (!pcoinsTip->Flush())
@@ -3296,6 +3324,12 @@ bool ContextualCheckBlockHeader(const CBlockHeader& block, CValidationState& sta
             REJECT_OBSOLETE, "bad-version");
     }
 
+    // Reject block.nVersion=4 blocks when 95% (75% on testnet) of the network has upgraded:
+    if(block.nVersion < 5 && CBlockIndex::IsSuperMajority(5, pindexPrev, Params().RejectBlockOutdatedMajority())) {
+        return state.Invalid(error("%s : rejected nVersion= block", __func__),
+            REJECT_OBSOLETE, "bad-version");
+    }
+
     return true;
 }
 
@@ -3448,21 +3482,24 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                 if (it == mapStakeSpent.end()) {
                     return false;
                 }
-                if (it->second <= pindexPrev->nHeight) {
+                if (it->second < pindexPrev->nHeight) {
                     return false;
                 }
             }
         }
 
         // if this is on a fork
-        if (!chainActive.Contains(pindexPrev) && pindexPrev != NULL) {
+        if (pindexPrev != NULL && !chainActive.Contains(pindexPrev)) {
             // start at the block we're adding on to
             CBlockIndex *last = pindexPrev;
 
             // while that block is not on the main chain
-            while (!chainActive.Contains(last) && pindexPrev != NULL) {
+            while (last != NULL && !chainActive.Contains(last)) {
                 CBlock bl;
-                ReadBlockFromDisk(bl, last);
+                if (!ReadBlockFromDisk(bl, last)) {
+                    return false;
+                }
+
                 // loop through every spent input from said block
                 for (CTransaction t : bl.vtx) {
                     for (CTxIn in: t.vin) {
@@ -3478,7 +3515,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
                 }
 
                 // go to the parent block
-                last = pindexPrev->pprev;
+                last = last->pprev;
             }
         }
     }
@@ -5384,13 +5421,14 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
 
     else if (strCommand == "reject") {
-        if (fDebug) {
-            try {
-                string strMsg;
-                unsigned char ccode;
-                string strReason;
-                vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
+        string strMsg;
+        unsigned char ccode;
+        string strReason;
 
+        try {
+            vRecv >> LIMITED_STRING(strMsg, CMessageHeader::COMMAND_SIZE) >> ccode >> LIMITED_STRING(strReason, MAX_REJECT_MESSAGE_LENGTH);
+
+            if (fDebug) {
                 ostringstream ss;
                 ss << strMsg << " code " << itostr(ccode) << ": " << strReason;
 
@@ -5400,9 +5438,20 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     ss << ": hash " << hash.ToString();
                 }
                 LogPrint("net", "Reject %s\n", SanitizeString(ss.str()));
-            } catch (std::ios_base::failure& e) {
-                // Avoid feedback loops by preventing reject messages from triggering a new reject message.
-                LogPrint("net", "Unparseable reject message received\n");
+            }
+        } catch (std::ios_base::failure& e) {
+            // Avoid feedback loops by preventing reject messages from triggering a new reject message.
+            LogPrint("net", "Unparseable reject message received\n");
+        }
+
+        // If recieved REJECT_OBSELETE, check current protocol version.
+        if (ccode == REJECT_OBSOLETE) {
+            if (PROTOCOL_VERSION < ActiveProtocol()) {
+                // If node is outdated
+                LogPrintf("Your node is too old (%d), you MUST upgrade to protocol version %d minimum, exiting...", PROTOCOL_VERSION, ActiveProtocol());
+                StartShutdown();
+            } else {
+                // Sporks probably not updated
             }
         }
     } else {
@@ -5415,7 +5464,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         masternodeSync.ProcessMessage(pfrom, strCommand, vRecv);
     }
 
-
     return true;
 }
 
@@ -5425,11 +5473,19 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    if (chainActive.Height() >= SOFT_FORK_VERSION_130) {
-        return MIN_PEER_PROTO_VERSION_AFTER_FORK;
+    if (IsSporkActive(SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6)) {
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_3;
     }
 
-    return MIN_PEER_PROTO_VERSION;
+    if (IsSporkActive(SPORK_19_NEW_PROTOCOL_ENFORCEMENT_5)) {
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_2;
+    }
+
+    if (IsSporkActive(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4)) {
+        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
+    }
+
+    return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
 }
 
 // requires LOCK(cs_vRecvMsg)

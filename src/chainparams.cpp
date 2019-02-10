@@ -102,9 +102,9 @@ public:
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         nSubsidyHalvingInterval = 1050000;
         nMaxReorganizationDepth = 100;
-        nEnforceBlockUpgradeMajority = 750;
-        nRejectBlockOutdatedMajority = 950;
-        nToCheckBlockUpgradeMajority = 1000;
+        nEnforceBlockUpgradeMajority = 4050;
+        nRejectBlockOutdatedMajority = 5130;
+        nToCheckBlockUpgradeMajority = 5400;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Feirm: 1 day
         nTargetSpacing = 2 * 60;  // Feirm: 2 minutes
@@ -208,9 +208,9 @@ public:
         pchMessageStart[3] = 0x5c;
         vAlertPubKey = ParseHex("0486bce1bac0d543f104cbff2bd23680056a3b9ea05e1137d2ff90eeb5e08472eb500322593a2cb06fbf8297d7beb6cd30cb90f98153b5b7cce1493749e41e0284");
         nDefaultPort = 34912;
-        nEnforceBlockUpgradeMajority = 51;
-        nRejectBlockOutdatedMajority = 75;
-        nToCheckBlockUpgradeMajority = 100;
+        nEnforceBlockUpgradeMajority = 4320;
+        nRejectBlockOutdatedMajority = 5472;
+        nToCheckBlockUpgradeMajority = 5760;
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // Feirm: 1 day
         nTargetSpacing = 2 * 60;  // Feirm: 1 minute
@@ -259,7 +259,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = true;
 
         nPoolMaxTransactions = 2;
-        strSporkKey = "0440f83f0d7311f7820bd863d3b24c03ee5fa241b3554b62d3f15b42234c42dbca99147422ae4550d635a3320f84c0cb6a502d7989d645f1917f9c4cd37d180b57";
+        strSporkKey = "045601ee8dd3414a5d3f44ef8157790cf9a8cc61e5cc5ab579c16976744b30b11da4116ef7d840337a98eb36304adb87b3032265f3ba8ad6e454151f4b1f136ceb";
         strMasternodePoolDummyAddress = "gbJ4Qad4xc77PpLzMx6rUegAs6aUPWkcUq";
         nStartMasternodePayments = genesis.nTime + 86400; // 24 hours after genesis
         nBudget_Fee_Confirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
