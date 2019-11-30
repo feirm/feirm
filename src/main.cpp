@@ -1657,12 +1657,27 @@ int64_t GetBlockValue(int nHeight)
         nSubsidy = 20 * COIN;
     else if (nHeight > 75000 && nHeight <= 100000)
         nSubsidy = 30 * COIN;
-    else if (nHeight > 100000 && nHeight <= 1050000)
+    // Reward change to cater for migration
+    else if (nHeight > 100000 && nHeight <= HARD_FORK_VERSION_200)
         nSubsidy = 10 * COIN;
-    else if (nHeight > 1050000 && nHeight <= 2100000)
+    else if (nHeight > HARD_FORK_VERSION_200 && nHeight <= 651831)
+        nSubsidy = 30 * COIN;
+    else if (nHeight > 651831 && nHeight <= 779595)
+        nSubsidy = 22 * COIN;
+    else if (nHeight > 779595 && nHeight <= 907359)
+        nSubsidy = 14 * COIN;
+    else if (nHeight > 907359 && nHeight <= 1035123)
+        nSubsidy = 10 * COIN;
+    else if (nHeight > 1035123 && nHeight <= 1162887)
+        nSubsidy = 7 * COIN;
+    else if (nHeight > 1162887 && nHeight <= 1418415)
         nSubsidy = 5 * COIN;
-    else if (nHeight > 2100000 && nHeight <= 3150000)
-        nSubsidy = 2.5 * COIN;
+    else if (nHeight > 1418415 && nHeight <= 1673943)
+        nSubsidy = 4 * COIN;
+    else if (nHeight > 1673943 && nHeight <= 1929471)
+        nSubsidy = 3 * COIN;
+    else if (nHeight > 1929471 && nHeight <= 2184999)
+        nSubsidy = 2 * COIN;
     else
         nSubsidy = 1.25 * COIN;
 
@@ -1690,6 +1705,14 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     ret = blockValue * 0.85; // 85% of block reward
 
     return ret;
+}
+
+CAmount GetMasternodeCollateral() {
+    if (chainActive.Height() >= HARD_FORK_VERSION_200) {
+        return MASTERNODE_COLLATERAL_AFTER_524067;
+    }
+
+    return MASTERNODE_COLLATERAL;
 }
 
 bool IsInitialBlockDownload()
@@ -5473,19 +5496,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    if (IsSporkActive(SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6)) {
-        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_3;
+    if (chainActive.Height() >= HARD_FORK_VERSION_200) {
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     }
 
-    if (IsSporkActive(SPORK_19_NEW_PROTOCOL_ENFORCEMENT_5)) {
-        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_2;
-    }
-
-    if (IsSporkActive(SPORK_18_NEW_PROTOCOL_ENFORCEMENT_4)) {
-        return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
-    }
-
-    return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
+    return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
 // requires LOCK(cs_vRecvMsg)

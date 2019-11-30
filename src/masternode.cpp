@@ -1,5 +1,7 @@
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
+// Copyright (c) 2017-2019 The Feirm developers
+// Copyright (c) 2019 Collegicoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -216,7 +218,7 @@ void CMasternode::Check(bool forceCheck)
     if (!unitTest) {
         CValidationState state;
         CMutableTransaction tx = CMutableTransaction();
-        CTxOut vout = CTxOut((MASTERNODE_COLLATERAL-0.01) * COIN, masternodeSigner.collateralPubKey);
+        CTxOut vout = CTxOut((GetMasternodeCollateral()-0.01) * COIN, masternodeSigner.collateralPubKey);
         tx.vin.push_back(vin);
         tx.vout.push_back(vout);
 
@@ -576,14 +578,14 @@ bool CMasternodeBroadcast::CheckInputsAndAdd(int& nDoS)
 
     CValidationState state;
     CMutableTransaction tx = CMutableTransaction();
-    CTxOut vout = CTxOut((MASTERNODE_COLLATERAL-0.01) * COIN, masternodeSigner.collateralPubKey);
+    CTxOut vout = CTxOut((GetMasternodeCollateral()-0.01) * COIN, masternodeSigner.collateralPubKey);
     tx.vin.push_back(vin);
     tx.vout.push_back(vout);
 
     {
         TRY_LOCK(cs_main, lockMain);
         if (!lockMain) {
-            // not mnb fault, let it to be checked again later
+        // not mnb fault, let it to be checked again later
             mnodeman.mapSeenMasternodeBroadcast.erase(GetHash());
             masternodeSync.mapSeenSyncMNB.erase(GetHash());
             return false;
