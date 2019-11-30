@@ -5474,7 +5474,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 int ActiveProtocol()
 {
     if (chainActive.Height() >= HARD_FORK_VERSION_200) {
-        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT_3;
+        return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     }
 
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
