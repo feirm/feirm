@@ -1712,7 +1712,7 @@ CAmount GetMasternodeCollateral() {
         return MASTERNODE_COLLATERAL_AFTER_524067;
     }
 
-    return MASTERNODE_COLLATERAL
+    return MASTERNODE_COLLATERAL;
 }
 
 bool IsInitialBlockDownload()
