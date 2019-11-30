@@ -1707,6 +1707,14 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
     return ret;
 }
 
+CAmount GetMasternodeCollateral() {
+    if (chainActive.Height() >= HARD_FORK_VERSION_200) {
+        return MASTERNODE_COLLATERAL_AFTER_524067;
+    }
+
+    return MASTERNODE_COLLATERAL
+}
+
 bool IsInitialBlockDownload()
 {
     LOCK(cs_main);

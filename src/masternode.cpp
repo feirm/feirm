@@ -23,14 +23,6 @@ map<uint256, int> mapSeenMasternodeScanningErrors;
 // cache block hashes as we calculate them
 std::map<int64_t, uint256> mapCacheBlockHashes;
 
-CAmount GetMasternodeCollateral() {
-    if (chainActive.Height() >= HARD_FORK_VERSION_200) {
-        return MASTERNODE_COLLATERAL_AFTER_524067;
-    }
-
-    return MASTERNODE_COLLATERAL
-}
-
 //Get the last hash that matches the modulus given. Processed in reverse order
 bool GetBlockHash(uint256& hash, int nBlockHeight)
 {
