@@ -883,8 +883,11 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         nSubsidy = 1.25 * COIN;
 
     // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-    // TODO
-    return ((nSubsidy / 100) * 10) * 1440 * 30;
+    if (nHeight > HARD_FORK_VERSION_210) {
+        return ((nSubsidy / 100) * 10) * 720 * 30;
+    } else {
+        return ((nSubsidy / 100) * 10) * 1440 * 30;
+    }
 }
 
 void CBudgetManager::NewBlock()
@@ -904,10 +907,16 @@ void CBudgetManager::NewBlock()
     // incremental sync with our peers
     if (masternodeSync.IsSynced()) {
         LogPrint("masternode","CBudgetManager::NewBlock - incremental sync started\n");
-        // TODO
-        if (chainActive.Height() % 1440 == rand() % 1440) {
-            ClearSeen();
-            ResetSync();
+        if (chainActive.Height() > HARD_FORK_VERSION_210) {
+            if (chainActive.Height() % 720 == rand() % 720) {
+                ClearSeen();
+                ResetSync();
+            }
+        } else {
+            if (chainActive.Height() % 1440 == rand() % 1440) {
+                ClearSeen();
+                ResetSync();
+            }
         }
 
         LOCK(cs_vNodes);
