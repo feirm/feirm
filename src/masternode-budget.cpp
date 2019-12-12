@@ -859,17 +859,35 @@ CAmount CBudgetManager::GetTotalBudget(int nHeight)
         nSubsidy = 31.5 * COIN;
     else if (nHeight > 25000 && nHeight <= 100000)
         nSubsidy = 22.05 * COIN;
-    else if (nHeight > 100000 && nHeight <= 1050000)
-        nSubsidy = 10.5 * COIN;
-    else if (nHeight > 1050000 && nHeight <= 2100000)
-        nSubsidy = 5.25 * COIN;
-    else if (nHeight > 2100000 && nHeight <= 3150000)
-        nSubsidy = 2.63 * COIN;
+    else if (nHeight > 100000 && nHeight <= HARD_FORK_VERSION_210)
+        nSubsidy = 10 * COIN;
+    else if (nHeight > HARD_FORK_VERSION_210 && nHeight <= 651831)
+        nSubsidy = 30 * COIN;
+    else if (nHeight > 651831 && nHeight <= 779595)
+        nSubsidy = 22 * COIN;
+    else if (nHeight > 779595 && nHeight <= 907359)
+        nSubsidy = 14 * COIN;
+    else if (nHeight > 907359 && nHeight <= 1035123)
+        nSubsidy = 10 * COIN;
+    else if (nHeight > 1035123 && nHeight <= 1162887)
+        nSubsidy = 7 * COIN;
+    else if (nHeight > 1162887 && nHeight <= 1418415)
+        nSubsidy = 5 * COIN;
+    else if (nHeight > 1418415 && nHeight <= 1673943)
+        nSubsidy = 4 * COIN;
+    else if (nHeight > 1673943 && nHeight <= 1929471)
+        nSubsidy = 3 * COIN;
+    else if (nHeight > 1929471 && nHeight <= 2184999)
+        nSubsidy = 2 * COIN;
     else
-        nSubsidy = 1.31 * COIN;
+        nSubsidy = 1.25 * COIN;
 
     // Amount of blocks in a months period of time (using 1 minutes per) = (60*24*30)
-    return ((nSubsidy / 100) * 10) * 1440 * 30;
+    if (nHeight > HARD_FORK_VERSION_210) {
+        return ((nSubsidy / 100) * 10) * 720 * 30;
+    } else {
+        return ((nSubsidy / 100) * 10) * 1440 * 30;
+    }
 }
 
 void CBudgetManager::NewBlock()
@@ -889,9 +907,16 @@ void CBudgetManager::NewBlock()
     // incremental sync with our peers
     if (masternodeSync.IsSynced()) {
         LogPrint("masternode","CBudgetManager::NewBlock - incremental sync started\n");
-        if (chainActive.Height() % 1440 == rand() % 1440) {
-            ClearSeen();
-            ResetSync();
+        if (chainActive.Height() > HARD_FORK_VERSION_210) {
+            if (chainActive.Height() % 720 == rand() % 720) {
+                ClearSeen();
+                ResetSync();
+            }
+        } else {
+            if (chainActive.Height() % 1440 == rand() % 1440) {
+                ClearSeen();
+                ResetSync();
+            }
         }
 
         LOCK(cs_vNodes);
