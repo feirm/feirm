@@ -1647,6 +1647,11 @@ int64_t GetBlockValue(int nHeight)
             return 5000 * COIN;
     }
 
+    if (nHeight == HARD_FORK_MIGRATION) {
+        // Mint the 40,000,000 XFE required for migrations
+        return 40000000
+    }
+
     if (nHeight < Params().LAST_POW_BLOCK())
         nSubsidy = 5000 * COIN;
     else if (nHeight <= 5000)
