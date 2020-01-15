@@ -1647,6 +1647,11 @@ int64_t GetBlockValue(int nHeight)
             return 5000 * COIN;
     }
 
+    if (nHeight == HARD_FORK_MIGRATION) {
+        // Mint the 40,000,000 XFE required for migrations
+        return 40000000 * COIN;
+    }
+
     if (nHeight < Params().LAST_POW_BLOCK())
         nSubsidy = 5000 * COIN;
     else if (nHeight <= 5000)
@@ -5496,10 +5501,10 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 //       it was the one which was commented out
 int ActiveProtocol()
 {
-    if (chainActive.Height() >= HARD_FORK_VERSION_210) {
+    if (IsSporkActive(SPORK_20_NEW_PROTOCOL_ENFORCEMENT_6)) {
         return MIN_PEER_PROTO_VERSION_AFTER_ENFORCEMENT;
     }
-
+    
     return MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT;
 }
 
