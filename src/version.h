@@ -28,7 +28,7 @@ static const int MIN_PEER_PROTO_VERSION_BEFORE_ENFORCEMENT = 70919;
 static const int HARD_FORK_VERSION_200 = 524067;
 static const int HARD_FORK_VERSION_210 = 539000;
 // Wednesday 15th January 2020 (Approx. 19:00 GMT)
-static const int HARD_FORK_MIGRATION = 552992;
+static const int HARD_FORK_MIGRATION = 552892;
 
 //! nTime field added to CAddress, starting with this version;
 //! if possible, avoid requesting addresses nodes older than this
