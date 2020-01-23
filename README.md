@@ -11,9 +11,11 @@ Feirm is a cryptocurrency which allows users to exchange to use a decentralized 
 More information at [feirm.com](https://www.feirm.com)
 
 ### Coin Specs
-| Block Time                  | 120 Seconds      |
-| Max Coin Supply (PoS Phase) | 100,000,000 XFE |
-| Premine                     | 1,000,000 XFE    |
+| Block Time 	| 120 Seconds     	|
+|------------	|-----------------	|
+| Max Supply 	| 100,000,000 XFE 	|
+|------------	|-----------------	|
+| Premine    	|  1,000,000 XFE  	|
 
 ### Reward Distribution
 
@@ -33,4 +35,4 @@ More information at [feirm.com](https://www.feirm.com)
 | 1418416-1673943  | 85% (3.4 XFE)    | 10% (0.4 XFE)   | 5% (0.2 XFE)    |
 | 1673944-1929471  | 85% (2.55 XFE)   | 10% (0.3 XFE)   | 5% (0.15 XFE)   |
 | 1929472-2184999  | 85% (1.7 XFE)    | 10% (0.2 XFE)   | 5% (0.1 XFE)    |
-| 2184999-Infinite | 85% (1.0625 XFE) | 10% (0.125 XFE) | 5% (0.0625 XFE) |
+| 2185000-Infinite | 85% (1.0625 XFE) | 10% (0.125 XFE) | 5% (0.0625 XFE) |
