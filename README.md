@@ -14,7 +14,6 @@ More information at [feirm.com](https://www.feirm.com)
 | Block Time 	| 120 Seconds     	|
 |------------	|-----------------	|
 | Max Supply 	| 100,000,000 XFE 	|
-|------------	|-----------------	|
 | Premine    	|  1,000,000 XFE  	|
 
 ### Reward Distribution
