@@ -3495,6 +3495,11 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
         return false;
     }
 
+    // Halt blockchain if we reach the target blockheight
+    if (pindex->nHeight >= Params().LAST_BLOCK()) {
+        return error("AcceptBlock(): Chain has been halted, please migrate your coins to the Binance Smart Chain.");
+    }
+
     int nHeight = pindex->nHeight;
 
     if (block.IsProofOfStake()) {
