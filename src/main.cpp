@@ -3496,6 +3496,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
     }
 
     // Halt blockchain if we reach the target blockheight
+    // Expected to hit Friday 16th April 2020
     if (pindex->nHeight >= Params().LAST_BLOCK()) {
         return error("AcceptBlock(): Chain has been halted, please migrate your coins to the Binance Smart Chain.");
     }

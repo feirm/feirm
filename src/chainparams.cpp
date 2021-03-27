@@ -122,7 +122,7 @@ public:
         nModifierUpdateBlock = 1; // we use the version 2 for XFE
 
         // Last block ever on XFE chain
-        nLastBlock = 869150;
+        nLastBlock = 875000;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -239,7 +239,7 @@ public:
         nMaxMoneyOut = 100000000 * COIN;
 
         // Last block ever on XFE chain
-        nLastBlock = 869150;
+        nLastBlock = 875000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1519321720;
@@ -315,7 +315,7 @@ public:
         genesis.nNonce = 20749934;
 
         // Last block ever on XFE chain
-        nLastBlock = 869150;
+        nLastBlock = 875000;
 
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 81296;
